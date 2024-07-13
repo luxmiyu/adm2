@@ -3,23 +3,24 @@
 	"id": "adm2",
 	"version": "${version}",
 	"name": "Any Dimension Mod 2",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Create dimensions out of any block! This mod adds 400+ dimensions to the game, one for each of the possible blocks.",
 	"authors": [
-		"Me!"
+		"luxmiyu"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://luxmiyu.com/adm2",
+		"sources": "https://github.com/luxmiyu/adm2",
+		"issues": "https://github.com/luxmiyu/adm2/issues"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/adm2/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"dev.luxmiyu.adm2.AnyDimensionMod2"
+			"dev.luxmiyu.adm2.Adm2"
 		],
 		"fabric-datagen": [
-			"dev.luxmiyu.adm2.AnyDimensionMod2DataGenerator"
+			"dev.luxmiyu.adm2.Adm2DataGenerator"
 		]
 	},
 	"mixins": [
@@ -32,6 +33,17 @@
 		"fabric-api": "*"
 	},
 	"suggests": {
-		"another-mod": "*"
+		"modmenu": "*",
+		"immersive_portals": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"adm2.discord": "https://discord.gg/komimau",
+				"adm2.luxmiyu": "https://luxmiyu.com"
+			},
+			"badges": [],
+			"update_checker": true
+		}
 	}
 }
