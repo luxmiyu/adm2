@@ -2,7 +2,6 @@ package dev.luxmiyu.adm2;
 
 import dev.luxmiyu.adm2.command.Adm2Command;
 import dev.luxmiyu.adm2.item.*;
-import dev.luxmiyu.adm2.item.DebugWandItem;
 import dev.luxmiyu.adm2.util.Adm2Util;
 import net.fabricmc.api.ModInitializer;
 

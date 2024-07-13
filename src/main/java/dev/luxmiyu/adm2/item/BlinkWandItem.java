@@ -32,15 +32,22 @@ public class BlinkWandItem extends WandItem {
         }
 
         ServerWorld world = Adm2Util.getDimensionWorld(server, block);
+        World playerWorld = player.getWorld();
 
-        if (world == null) {
+        if (world == null || playerWorld == null) {
             player.sendMessage(Adm2Util.textReplaceable("message.adm2.blink_fail", blockName), true);
             return;
         }
 
-        player.teleport(world, pos.getX(), pos.getY(), pos.getZ(), Set.of(), player.getYaw(), player.getPitch());
+        String dimensionName = "the " + blockName + " Dimension";
+        boolean sameDimension = playerWorld.getRegistryKey().equals(world.getRegistryKey());
+        if (sameDimension) {
+            world = player.getServer().getWorld(ServerWorld.OVERWORLD);
+            dimensionName = "the Overworld";
+        }
 
-        player.sendMessage(Adm2Util.textReplaceable("message.adm2.blink_success", blockName, Adm2Util.posToString(pos)), true);
+        player.teleport(world, pos.getX(), pos.getY(), pos.getZ(), Set.of(), player.getYaw(), player.getPitch());
+        player.sendMessage(Adm2Util.textReplaceable("message.adm2.blink_success", dimensionName, Adm2Util.posToString(pos)), true);
     }
 
     @Override

@@ -20,8 +20,11 @@ public class DebugWandItem extends WandItem {
 
     private void printBlocksConsole(BlockView world, BlockPos blockPos, String modId, boolean checkFullCube) {
         Adm2.LOGGER.info("");
-        Adm2.LOGGER.info("Printing full cube blocks at {}", Adm2Util.posToString(blockPos));
-        Adm2.LOGGER.info("Mod ID: {}", modId);
+        Adm2.LOGGER.info(checkFullCube ? "Printing full cube blocks at {} from {}" : "Printing all blocks at {}", Adm2Util.posToString(blockPos), modId);
+
+        if (checkFullCube) {
+            Adm2.LOGGER.info("Sneak while using the Debug Wand to print all blocks instead.");
+        }
         Adm2.LOGGER.info("");
 
         StringBuilder blockIds = new StringBuilder();
