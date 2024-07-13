@@ -28,7 +28,7 @@
   "block.adm2.any_dimensional_copper_ore": "Any Dimensional Copper Ore",
   "block.adm2.any_dimensional_block": "Any Dimensional Block",
 
-  "message.adm2.command_success": "Received Any Dimensional Wands",
+  "message.adm2.command_success": "Received Any Dimension Mod 2 wands",
   "message.adm2.command_not_player": "You must be a player to use this command",
   "message.adm2.command_no_permission": "You don't have permission to use this command",
   "message.adm2.debug_print": "Printed debug info to console",
@@ -42,7 +42,7 @@
   "message.adm2.summon_cancel_fail": "No saved block",
   "message.adm2.list_blocks": "Placed {0} valid portal blocks",
   "message.adm2.list_portals": "Placed {0} valid portals",
-  "message.adm2.blink_success": "Teleported to the {0} Dimension at {1}",
+  "message.adm2.blink_success": "Teleported to {0} at {1}",
   "message.adm2.blink_fail": "Dimension not found: {0}",
   "message.adm2.useless": "You feel a sense of uselessness...",
 
@@ -53,6 +53,6 @@
   "tooltip.adm2.random_wand": "Use on a block to summon a random portal frame",
   "tooltip.adm2.list_wand": "Use to place valid blocks, use while sneaking to place portals",
   "tooltip.adm2.blink_wand": "Use on air or on a block to teleport to a dimension",
-  "tooltip.adm2.debug_wand": "Use to print debug info to console, use while sneaking to print in chat",
+  "tooltip.adm2.debug_wand": "Use on a block to print useful info to console",
   "tooltip.adm2.useless_wand": "Use to feel a sense of uselessness..."
 }

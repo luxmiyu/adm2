@@ -41,7 +41,7 @@ public class Adm2Command {
                 player.giveItemStack(new ItemStack(item));
             }
 
-            source.sendFeedback(() -> Text.translatable("message.adm2.command_success"), false);
+            source.sendFeedback(() -> Text.translatable("message.adm2.command_success"), true);
 
             return 1;
         } catch (Exception e) {

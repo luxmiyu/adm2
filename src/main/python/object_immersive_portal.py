@@ -6,7 +6,7 @@ def immersive_portal_from_dimensions(vanilla_dimensions = [], modded_dimensions 
   ]
   
   for dimensionId in vanilla_dimensions:
-    if dimensionId not in exclude:
+    if f"minecraft__{dimensionId}" not in exclude:
       from_dimensions.append(f"adm2:minecraft__{dimensionId}")
 
   for dimension in modded_dimensions:

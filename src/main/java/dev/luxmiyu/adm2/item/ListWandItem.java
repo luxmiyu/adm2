@@ -4,6 +4,7 @@ import dev.luxmiyu.adm2.util.Adm2Util;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.LeavesBlock;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Hand;
@@ -27,6 +28,10 @@ public class ListWandItem extends WandItem {
             BlockState blockState = block.getDefaultState();
             BlockState floorState = Blocks.BARRIER.getDefaultState();
             BlockState airState = Blocks.AIR.getDefaultState();
+
+            if (block instanceof LeavesBlock) {
+                blockState = blockState.with(LeavesBlock.PERSISTENT, true);
+            }
 
             world.setBlockState(pos.add(x, 0, z), blockState);
             world.setBlockState(pos.add(x, -1, z), floorState);
@@ -94,6 +99,10 @@ public class ListWandItem extends WandItem {
 
         BlockState frameBlock = block.getDefaultState();
         BlockState airBlock = Blocks.AIR.getDefaultState();
+
+        if (block instanceof LeavesBlock) {
+            frameBlock = frameBlock.with(LeavesBlock.PERSISTENT, true);
+        }
 
         BlockPos[] framePositions = {
             pos.add(0, 0, 0),

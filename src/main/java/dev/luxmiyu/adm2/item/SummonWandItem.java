@@ -4,6 +4,7 @@ import dev.luxmiyu.adm2.util.Adm2Util;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.LeavesBlock;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
@@ -119,6 +120,10 @@ public class SummonWandItem extends WandItem {
 
             BlockState frameBlock = savedBlock.getDefaultState();
             BlockState airBlock = Blocks.AIR.getDefaultState();
+
+            if (savedBlock instanceof LeavesBlock) {
+                frameBlock = frameBlock.with(LeavesBlock.PERSISTENT, true);
+            }
 
             for (BlockPos pos : framePositions) {
                 world.setBlockState(pos, frameBlock);
