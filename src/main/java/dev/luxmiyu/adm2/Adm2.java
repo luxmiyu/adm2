@@ -10,14 +10,12 @@ import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.FallingBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
+import net.minecraft.util.ColorCode;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -44,16 +42,16 @@ public class Adm2 implements ModInitializer {
 	public static final Item ANY_DIMENSIONAL_ROD = registerItem("any_dimensional_rod", new Item(new FabricItemSettings().maxCount(64)));
 	public static final Item ANY_DIMENSIONAL_RING = registerItem("any_dimensional_ring", new Item(new FabricItemSettings().maxCount(64)));
 
-	public static final Block ANY_DIMENSIONAL_SAND = registerBlock("any_dimensional_sand", new FallingBlock(SAND_SETTINGS));
-	public static final Block ANY_DIMENSIONAL_COAL_ORE = registerBlock("any_dimensional_coal_ore", new FallingBlock(SAND_SETTINGS));
-	public static final Block ANY_DIMENSIONAL_IRON_ORE = registerBlock("any_dimensional_iron_ore", new FallingBlock(SAND_SETTINGS));
-	public static final Block ANY_DIMENSIONAL_GOLD_ORE = registerBlock("any_dimensional_gold_ore", new FallingBlock(SAND_SETTINGS));
-	public static final Block ANY_DIMENSIONAL_DIAMOND_ORE = registerBlock("any_dimensional_diamond_ore", new FallingBlock(SAND_SETTINGS));
-	public static final Block ANY_DIMENSIONAL_EMERALD_ORE = registerBlock("any_dimensional_emerald_ore", new FallingBlock(SAND_SETTINGS));
-	public static final Block ANY_DIMENSIONAL_LAPIS_ORE = registerBlock("any_dimensional_lapis_ore", new FallingBlock(SAND_SETTINGS));
-	public static final Block ANY_DIMENSIONAL_REDSTONE_ORE = registerBlock("any_dimensional_redstone_ore", new FallingBlock(SAND_SETTINGS));
-	public static final Block ANY_DIMENSIONAL_COPPER_ORE = registerBlock("any_dimensional_copper_ore", new FallingBlock(SAND_SETTINGS));
-	public static final Block ANY_DIMENSIONAL_QUARTZ_ORE = registerBlock("any_dimensional_quartz_ore", new FallingBlock(SAND_SETTINGS));
+	public static final Block ANY_DIMENSIONAL_SAND = registerBlock("any_dimensional_sand", new ColoredFallingBlock(new ColorCode(0x19141f), SAND_SETTINGS));
+	public static final Block ANY_DIMENSIONAL_COAL_ORE = registerBlock("any_dimensional_coal_ore", new ColoredFallingBlock(new ColorCode(0x19141f), SAND_SETTINGS));
+	public static final Block ANY_DIMENSIONAL_IRON_ORE = registerBlock("any_dimensional_iron_ore", new ColoredFallingBlock(new ColorCode(0x19141f), SAND_SETTINGS));
+	public static final Block ANY_DIMENSIONAL_GOLD_ORE = registerBlock("any_dimensional_gold_ore", new ColoredFallingBlock(new ColorCode(0x19141f), SAND_SETTINGS));
+	public static final Block ANY_DIMENSIONAL_DIAMOND_ORE = registerBlock("any_dimensional_diamond_ore", new ColoredFallingBlock(new ColorCode(0x19141f), SAND_SETTINGS));
+	public static final Block ANY_DIMENSIONAL_EMERALD_ORE = registerBlock("any_dimensional_emerald_ore", new ColoredFallingBlock(new ColorCode(0x19141f), SAND_SETTINGS));
+	public static final Block ANY_DIMENSIONAL_LAPIS_ORE = registerBlock("any_dimensional_lapis_ore", new ColoredFallingBlock(new ColorCode(0x19141f), SAND_SETTINGS));
+	public static final Block ANY_DIMENSIONAL_REDSTONE_ORE = registerBlock("any_dimensional_redstone_ore", new ColoredFallingBlock(new ColorCode(0x19141f), SAND_SETTINGS));
+	public static final Block ANY_DIMENSIONAL_COPPER_ORE = registerBlock("any_dimensional_copper_ore", new ColoredFallingBlock(new ColorCode(0x19141f), SAND_SETTINGS));
+	public static final Block ANY_DIMENSIONAL_QUARTZ_ORE = registerBlock("any_dimensional_quartz_ore", new ColoredFallingBlock(new ColorCode(0x19141f), SAND_SETTINGS));
 	public static final Block ANY_DIMENSIONAL_BLOCK = registerBlock("any_dimensional_block", new Block(FabricBlockSettings.copy(Blocks.STONE)));
 
 	public static final ItemGroup ANY_DIMENSIONAL_ITEM_GROUP = Registry.register(
