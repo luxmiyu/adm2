@@ -29,8 +29,8 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	// CustomPortalAPI
-	modImplementation 'net.kyrptonaught:customportalapi:0.0.1-beta65.5-1.20.5'
-	include 'net.kyrptonaught:customportalapi:0.0.1-beta65.5-1.20.5'
+	modImplementation 'net.kyrptonaught:customportalapi:0.0.1-beta65.5-1.20.6'
+	include 'net.kyrptonaught:customportalapi:0.0.1-beta65.5-1.20.6'
 }
 
 processResources {
@@ -42,14 +42,14 @@ processResources {
 }
 
 tasks.withType(JavaCompile).configureEach {
-	it.options.release = 17
+	it.options.release = 21
 }
 
 java {
 	withSourcesJar()
 
-	sourceCompatibility = JavaVersion.VERSION_17
-	targetCompatibility = JavaVersion.VERSION_17
+	sourceCompatibility = JavaVersion.VERSION_21
+	targetCompatibility = JavaVersion.VERSION_21
 }
 
 jar {
