@@ -7,9 +7,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -26,8 +24,8 @@ public class Adm2 implements ModInitializer {
 	public static final String MOD_ID = "adm2";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-	private static final FabricItemSettings WAND_SETTINGS = new FabricItemSettings().maxCount(1);
-	private static final AbstractBlock.Settings SAND_SETTINGS = FabricBlockSettings.copy(Blocks.SAND).strength(3f);
+	private static final Item.Settings WAND_SETTINGS = new Item.Settings().maxCount(1);
+	private static final AbstractBlock.Settings SAND_SETTINGS = AbstractBlock.Settings.copy(Blocks.SAND).strength(3f);
 
 	public static final Item ANY_DIMENSIONAL_PORTAL_WAND = registerItem("any_dimensional_portal_wand", new PortalWandItem(WAND_SETTINGS));
 	public static final Item ANY_DIMENSIONAL_PORTAL_WAND_CLASSIC = registerItem("any_dimensional_portal_wand_classic", new PortalWandClassicItem(WAND_SETTINGS));
@@ -39,8 +37,8 @@ public class Adm2 implements ModInitializer {
 	public static final Item ANY_DIMENSIONAL_DEBUG_WAND = registerItem("any_dimensional_debug_wand", new DebugWandItem(WAND_SETTINGS));
 	public static final Item ANY_DIMENSIONAL_USELESS_WAND = registerItem("any_dimensional_useless_wand", new UselessWandItem(WAND_SETTINGS));
 
-	public static final Item ANY_DIMENSIONAL_ROD = registerItem("any_dimensional_rod", new Item(new FabricItemSettings().maxCount(64)));
-	public static final Item ANY_DIMENSIONAL_RING = registerItem("any_dimensional_ring", new Item(new FabricItemSettings().maxCount(64)));
+	public static final Item ANY_DIMENSIONAL_ROD = registerItem("any_dimensional_rod", new Item(new Item.Settings().maxCount(64)));
+	public static final Item ANY_DIMENSIONAL_RING = registerItem("any_dimensional_ring", new Item(new Item.Settings().maxCount(64)));
 
 	public static final Block ANY_DIMENSIONAL_SAND = registerBlock("any_dimensional_sand", new ColoredFallingBlock(new ColorCode(0x19141f), SAND_SETTINGS));
 	public static final Block ANY_DIMENSIONAL_COAL_ORE = registerBlock("any_dimensional_coal_ore", new ColoredFallingBlock(new ColorCode(0x19141f), SAND_SETTINGS));
@@ -52,7 +50,7 @@ public class Adm2 implements ModInitializer {
 	public static final Block ANY_DIMENSIONAL_REDSTONE_ORE = registerBlock("any_dimensional_redstone_ore", new ColoredFallingBlock(new ColorCode(0x19141f), SAND_SETTINGS));
 	public static final Block ANY_DIMENSIONAL_COPPER_ORE = registerBlock("any_dimensional_copper_ore", new ColoredFallingBlock(new ColorCode(0x19141f), SAND_SETTINGS));
 	public static final Block ANY_DIMENSIONAL_QUARTZ_ORE = registerBlock("any_dimensional_quartz_ore", new ColoredFallingBlock(new ColorCode(0x19141f), SAND_SETTINGS));
-	public static final Block ANY_DIMENSIONAL_BLOCK = registerBlock("any_dimensional_block", new Block(FabricBlockSettings.copy(Blocks.STONE)));
+	public static final Block ANY_DIMENSIONAL_BLOCK = registerBlock("any_dimensional_block", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
 
 	public static final ItemGroup ANY_DIMENSIONAL_ITEM_GROUP = Registry.register(
 		Registries.ITEM_GROUP,
@@ -96,7 +94,7 @@ public class Adm2 implements ModInitializer {
 	}
 
 	private static Block registerBlock(String name, Block block) {
-		registerItem(name, new BlockItem(block, new FabricItemSettings()));
+		registerItem(name, new BlockItem(block, new Item.Settings()));
 		return Registry.register(Registries.BLOCK, new Identifier(Adm2.MOD_ID, name), block);
 	}
 
