@@ -55,7 +55,7 @@ public class TeleportWandItem extends WandItem {
 
                 Vec3d teleportPos = new Vec3d(surfacePos.getX() + 0.5F, surfacePos.getY() + 0.2F, surfacePos.getZ() + 0.5F);
 
-                player.teleport(teleportPos.getX(), teleportPos.getY(), teleportPos.getZ());
+                player.teleport(teleportPos.getX(), teleportPos.getY(), teleportPos.getZ(), true);
 
                 String blockName = currentState.getBlock().getName().getString();
                 player.sendMessage(Adm2Util.textReplaceable("message.adm2.teleport_success", blockName, Adm2Util.posToString(surfacePos)), true);
@@ -66,7 +66,7 @@ public class TeleportWandItem extends WandItem {
                 Direction blockFacing = hitResult.getSide();
                 teleportPos = teleportPos.offset(blockFacing, 1.0D);
 
-                player.teleport(teleportPos.getX(), teleportPos.getY(), teleportPos.getZ());
+                player.teleport(teleportPos.getX(), teleportPos.getY(), teleportPos.getZ(), true);
 
                 String blockName = world.getBlockState(blockPos).getBlock().getName().getString();
                 player.sendMessage(Adm2Util.textReplaceable("message.adm2.teleport_success", blockName, Adm2Util.posToString(blockPos)), true);

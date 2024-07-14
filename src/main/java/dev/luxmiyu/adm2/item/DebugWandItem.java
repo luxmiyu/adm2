@@ -4,6 +4,7 @@ import dev.luxmiyu.adm2.Adm2;
 import dev.luxmiyu.adm2.util.Adm2Util;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.registry.Registries;
@@ -13,9 +14,38 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class DebugWandItem extends WandItem {
     public DebugWandItem(Settings settings) {
         super(settings, "tooltip.adm2.debug_wand", 0xda1f1f);
+    }
+
+    private static final Block[] EXCLUDED_BLOCKS = new Block[] {
+        Blocks.CHORUS_FLOWER,
+    };
+
+    private static final Block[] INCLUDED_BLOCKS = new Block[] {
+        Blocks.STONECUTTER,
+        Blocks.SOUL_SAND,
+    };
+
+    private boolean isBlockInArray(Block block, Block[] blocks) {
+        for (Block b : blocks) {
+            if (block == b) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private boolean isExcludedBlock(Block block) {
+        return isBlockInArray(block, EXCLUDED_BLOCKS);
+    }
+
+    private boolean isIncludedBlock(Block block) {
+        return isBlockInArray(block, INCLUDED_BLOCKS);
     }
 
     private void printBlocksConsole(BlockView world, BlockPos blockPos, String modId, boolean checkFullCube) {
@@ -27,22 +57,23 @@ public class DebugWandItem extends WandItem {
         }
         Adm2.LOGGER.info("");
 
-        StringBuilder blockIds = new StringBuilder();
+        List<String> blockIds = new ArrayList<>();
 
         for (Block block : Registries.BLOCK) {
             BlockState defaultState = block.getDefaultState();
             String blockModId = Registries.BLOCK.getId(block).getNamespace();
 
             if (!blockModId.equals(modId)) continue;
+            if (isExcludedBlock(block)) continue;
 
-            if (!checkFullCube || defaultState.isFullCube(world, blockPos)) {
+            if (isIncludedBlock(block) || !checkFullCube || defaultState.isFullCube(world, blockPos)) {
                 Identifier id = Registries.BLOCK.getId(block);
-                blockIds.append(id).append(", ");
+                blockIds.add("  \"" + id + "\"");
             }
         }
 
-        String removedComma = blockIds.substring(0, blockIds.length() - 2);
-        Adm2.LOGGER.info(removedComma);
+        String blockIdsString = "[\n" + String.join(",\n", blockIds) + "\n]";
+        Adm2.LOGGER.info(blockIdsString);
 
         Adm2.LOGGER.info("");
     }

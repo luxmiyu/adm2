@@ -1,25 +1,24 @@
-def immersive_portal_from_dimensions(vanilla_dimensions = [], modded_dimensions = [], exclude = []):
+def immersive_portal_from_dimensions(block_ids = [], exclude = []):
   from_dimensions = [
     "minecraft:overworld",
     "minecraft:the_nether",
     "minecraft:the_end"
   ]
-  
-  for dimensionId in vanilla_dimensions:
-    if f"minecraft__{dimensionId}" not in exclude:
-      from_dimensions.append(f"adm2:minecraft__{dimensionId}")
 
-  for dimension in modded_dimensions:
-    dimensionId = dimension["dimensionId"]
-    if dimensionId not in exclude:
-      from_dimensions.append(f"adm2:{dimensionId}")
+  for block_id in block_ids:
+    block_namespace = block_id.split(":")[0]
+    block_path = block_id.split(":")[1]
+    dimension_id = f"{block_namespace}__{block_path}"
+
+    if dimension_id not in exclude:
+      from_dimensions.append(f"adm2:{dimension_id}")
 
   return from_dimensions
 
-def get_to(dimension_id, block_id, vanilla_dimensions = [], modded_dimensions = []):
+def get_to(dimension_id, block_id, block_ids):
   immersive_portal = {
     "schema_version": "imm_ptl:v1",
-    "from": immersive_portal_from_dimensions(vanilla_dimensions, modded_dimensions, [dimension_id]),
+    "from": immersive_portal_from_dimensions(block_ids, [dimension_id]),
     "to": f"adm2:{dimension_id}",
     "form": {
       "type": "imm_ptl:classical",

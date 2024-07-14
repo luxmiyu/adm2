@@ -2,8 +2,7 @@
 #  generate.py
 #
 #  Data found in:
-#  - src/main/python/data/vanilla_dimensions.json
-#  - src/main/python/data/modded_dimensions.json
+#  - src/main/python/data/block_ids.json
 #
 #  This python script generates the JSON files for the following folders:
 #  - src/main/resources/data/adm2/dimension/
@@ -76,38 +75,38 @@ def empty_directories():
 
   print(f"Removed {removed_files} files.")
 
-def generate_dimension(dimensionId):
+def generate_dimension(dimension_id):
   global written_files
 
-  dimension = object_dimension.get(dimensionId)
-  file_path = f"./resources/data/adm2/dimension/{dimensionId}.json"
+  dimension = object_dimension.get(dimension_id)
+  file_path = f"./resources/data/adm2/dimension/{dimension_id}.json"
   
   with open(file_path, "w") as file:
     json.dump(dimension, file, indent=2)
 
   written_files += 1
 
-def generate_noise_settings(dimensionId, blockId):
+def generate_noise_settings(dimension_id, block_id):
   global written_files
 
-  leaves = f"{blockId}".endswith("_leaves")
+  leaves = f"{block_id}".endswith("_leaves")
 
-  noise_settings = object_noise_settings.get(blockId, leaves)
-  file_path = f"./resources/data/adm2/worldgen/noise_settings/{dimensionId}.json"
+  noise_settings = object_noise_settings.get(block_id, leaves)
+  file_path = f"./resources/data/adm2/worldgen/noise_settings/{dimension_id}.json"
   
   with open(file_path, "w") as file:
     json.dump(noise_settings, file, indent=2)
 
   written_files += 1
 
-def generate_immersive_portal(dimensionId, blockId, vanilla_dimensions, modded_dimensions):
+def generate_immersive_portal(dimension_id, block_id, block_ids):
   global written_files
 
-  immersive_portal_to = object_immersive_portal.get_to(dimensionId, blockId, vanilla_dimensions, modded_dimensions)
-  immersive_portal_from = object_immersive_portal.get_from(dimensionId, blockId)
+  immersive_portal_to = object_immersive_portal.get_to(dimension_id, block_id, block_ids)
+  immersive_portal_from = object_immersive_portal.get_from(dimension_id, block_id)
 
-  file_path_to = f"./resources/data/adm2/custom_portal_generation/{dimensionId}_to.json"
-  file_path_from = f"./resources/data/adm2/custom_portal_generation/{dimensionId}_from.json"
+  file_path_to = f"./resources/data/adm2/custom_portal_generation/{dimension_id}_to.json"
+  file_path_from = f"./resources/data/adm2/custom_portal_generation/{dimension_id}_from.json"
 
   with open(file_path_to, "w") as file:
     json.dump(immersive_portal_to, file, indent=2)
@@ -117,7 +116,7 @@ def generate_immersive_portal(dimensionId, blockId, vanilla_dimensions, modded_d
 
   written_files += 2
 
-def generate_ore(blockIds, ore):
+def generate_ore(block_ids, ore):
   global written_files
 
   oreId = ore[0]
@@ -125,7 +124,7 @@ def generate_ore(blockIds, ore):
   oreCount = ore[2]
   file_name = ore[3]
 
-  ore = object_ore.get(blockIds, oreId, oreSize, oreCount)
+  ore = object_ore.get(block_ids, oreId, oreSize, oreCount)
   file_path = f"./resources/data/adm2/worldgen/placed_feature/{file_name}.json"
 
   with open(file_path, "w") as file:
@@ -149,11 +148,10 @@ def generate_biome(ids):
 def main():
   empty_directories()
 
-  vanilla_dimensions = []
-  modded_dimensions = []
+  block_ids = []
 
-  featureBlockIds = []
-  featureOres = [
+  feature_block_ids = []
+  feature_ores = [
     ("minecraft:tnt", 32, 6, "tnt"),
     ("minecraft:pearlescent_froglight", 12, 4, "pearlescent_froglight"),
     ("minecraft:sand", 20, 2, "sand"),
@@ -169,40 +167,29 @@ def main():
     ("adm2:any_dimensional_quartz_ore", 8, 4, "adm2_any_dimensional_quartz_ore"),
     ("adm2:any_dimensional_redstone_ore", 8, 4, "adm2_any_dimensional_redstone_ore"),
   ]
-  featureNames = [ore[3] for ore in featureOres]
-  featureNames.append("iceberg")
+  feature_names = [ore[3] for ore in feature_ores]
+  feature_names.append("iceberg")
 
-  with open("./python/data/vanilla_dimensions.json", "r") as file:
+  with open("./python/data/block_ids.json", "r") as file:
     data = json.load(file)
-    
-    vanilla_dimensions = data
+    block_ids = data
 
-  with open("./python/data/modded_dimensions.json", "r") as file:
-    data = json.load(file)
+  for block_id in block_ids:
+    block_namespace = block_id.split(":")[0]
+    block_path = block_id.split(":")[1]
 
-    modded_dimensions = data
+    dimension_id = f"{block_namespace}__{block_path}"
 
-  for id in vanilla_dimensions:
-      generate_dimension(f"minecraft__{id}")
-      generate_noise_settings(f"minecraft__{id}", f"minecraft:{id}")
-      generate_immersive_portal(f"minecraft__{id}", f"minecraft:{id}", vanilla_dimensions, modded_dimensions)
+    generate_dimension(dimension_id)
+    generate_noise_settings(dimension_id, block_id)
+    generate_immersive_portal(dimension_id, block_id, block_ids)
 
-      featureBlockIds.append(f"minecraft:{id}")
+    feature_block_ids.append(block_id)
 
-  for dimension in modded_dimensions:
-    dimensionId = dimension["dimensionId"]
-    blockId = dimension["blockId"]
+  for ore in feature_ores:
+    generate_ore(feature_block_ids, ore)
 
-    generate_dimension(dimensionId)
-    generate_noise_settings(dimensionId, blockId)
-    generate_immersive_portal(dimensionId, blockId, vanilla_dimensions, modded_dimensions)
-
-    featureBlockIds.append(blockId)
-
-  for ore in featureOres:
-    generate_ore(featureBlockIds, ore)
-
-  generate_biome(featureNames)
+  generate_biome(feature_names)
 
   print(f"Generated {written_files} files.")
 

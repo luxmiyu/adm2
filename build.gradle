@@ -12,7 +12,7 @@ base {
 
 repositories {
 	// CustomPortalAPI
-	maven {url = "https://maven.kyrptonaught.dev"}
+//	maven {url = "https://maven.kyrptonaught.dev"}
 }
 
 fabricApi {
@@ -29,8 +29,8 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	// CustomPortalAPI
-	modImplementation 'net.kyrptonaught:customportalapi:0.0.1-beta65.5-1.20.6'
-	include 'net.kyrptonaught:customportalapi:0.0.1-beta65.5-1.20.6'
+//	modImplementation 'net.kyrptonaught:customportalapi:0.0.1-beta65.5-1.20.6'
+//	include 'net.kyrptonaught:customportalapi:0.0.1-beta65.5-1.20.6'
 }
 
 processResources {

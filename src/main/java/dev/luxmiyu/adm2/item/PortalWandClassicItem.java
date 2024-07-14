@@ -3,6 +3,7 @@ package dev.luxmiyu.adm2.item;
 import dev.luxmiyu.adm2.util.Adm2Util;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 
 public class PortalWandClassicItem extends WandItem {
@@ -13,7 +14,12 @@ public class PortalWandClassicItem extends WandItem {
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
         if (Adm2Util.isModLoaded("immersive_portals")) {
-            return ActionResult.PASS;
+            // TODO: Wait for CustomPortalAPI to update to 1.21,
+            //   then change ActionResult.SUCCESS to ActionResult.PASS
+            //   and remove the message
+            if (context.getPlayer() != null)
+                context.getPlayer().sendMessage(Text.literal("CustomPortalAPI not implemented in this pre-release version").withColor(0xffff00), true);
+            return ActionResult.SUCCESS;
         } else {
             PlayerEntity player = context.getPlayer();
 

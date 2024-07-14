@@ -1178,7 +1178,7 @@
         {
           "target": {
             "predicate_type": "minecraft:block_match",
-            "block": "minecraft:pumpkin"
+            "block": "minecraft:netherrack"
           },
           "state": {
             "Name": "adm2:any_dimensional_diamond_ore"
@@ -1187,7 +1187,7 @@
         {
           "target": {
             "predicate_type": "minecraft:block_match",
-            "block": "minecraft:netherrack"
+            "block": "minecraft:soul_sand"
           },
           "state": {
             "Name": "adm2:any_dimensional_diamond_ore"
@@ -1521,6 +1521,15 @@
           "target": {
             "predicate_type": "minecraft:block_match",
             "block": "minecraft:mushroom_stem"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:pumpkin"
           },
           "state": {
             "Name": "adm2:any_dimensional_diamond_ore"
@@ -2825,6 +2834,15 @@
         {
           "target": {
             "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stonecutter"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
             "block": "minecraft:warped_stem"
           },
           "state": {
@@ -3158,6 +3176,42 @@
         {
           "target": {
             "predicate_type": "minecraft:block_match",
+            "block": "minecraft:polished_tuff"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:chiseled_tuff"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:tuff_bricks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:chiseled_tuff_bricks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
             "block": "minecraft:calcite"
           },
           "state": {
@@ -3194,16 +3248,7 @@
         {
           "target": {
             "predicate_type": "minecraft:block_match",
-            "block": "minecraft:oxidized_copper"
-          },
-          "state": {
-            "Name": "adm2:any_dimensional_diamond_ore"
-          }
-        },
-        {
-          "target": {
-            "predicate_type": "minecraft:block_match",
-            "block": "minecraft:weathered_copper"
+            "block": "minecraft:copper_block"
           },
           "state": {
             "Name": "adm2:any_dimensional_diamond_ore"
@@ -3221,7 +3266,16 @@
         {
           "target": {
             "predicate_type": "minecraft:block_match",
-            "block": "minecraft:copper_block"
+            "block": "minecraft:weathered_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:oxidized_copper"
           },
           "state": {
             "Name": "adm2:any_dimensional_diamond_ore"
@@ -3276,6 +3330,78 @@
           "target": {
             "predicate_type": "minecraft:block_match",
             "block": "minecraft:cut_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:oxidized_chiseled_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:weathered_chiseled_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:exposed_chiseled_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:chiseled_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_oxidized_chiseled_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_weathered_chiseled_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_exposed_chiseled_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_chiseled_copper"
           },
           "state": {
             "Name": "adm2:any_dimensional_diamond_ore"
@@ -3348,6 +3474,150 @@
           "target": {
             "predicate_type": "minecraft:block_match",
             "block": "minecraft:waxed_cut_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:copper_grate"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:exposed_copper_grate"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:weathered_copper_grate"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:oxidized_copper_grate"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_copper_grate"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_exposed_copper_grate"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_weathered_copper_grate"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_oxidized_copper_grate"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:copper_bulb"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:exposed_copper_bulb"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:weathered_copper_bulb"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:oxidized_copper_bulb"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_copper_bulb"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_exposed_copper_bulb"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_weathered_copper_bulb"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_oxidized_copper_bulb"
           },
           "state": {
             "Name": "adm2:any_dimensional_diamond_ore"
@@ -3536,7 +3806,7 @@
         {
           "target": {
             "predicate_type": "minecraft:block_match",
-            "block": "minecraft:stonecutter"
+            "block": "minecraft:crafter"
           },
           "state": {
             "Name": "adm2:any_dimensional_diamond_ore"
@@ -3545,7 +3815,16 @@
         {
           "target": {
             "predicate_type": "minecraft:block_match",
-            "block": "minecraft:soul_sand"
+            "block": "minecraft:trial_spawner"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:vault"
           },
           "state": {
             "Name": "adm2:any_dimensional_diamond_ore"
@@ -3563,15 +3842,6 @@
         {
           "target": {
             "predicate_type": "minecraft:block_match",
-            "block": "adm2:any_dimensional_block"
-          },
-          "state": {
-            "Name": "adm2:any_dimensional_diamond_ore"
-          }
-        },
-        {
-          "target": {
-            "predicate_type": "minecraft:block_match",
             "block": "adm2:any_dimensional_coal_ore"
           },
           "state": {
@@ -3581,7 +3851,16 @@
         {
           "target": {
             "predicate_type": "minecraft:block_match",
-            "block": "adm2:any_dimensional_copper_ore"
+            "block": "adm2:any_dimensional_iron_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "adm2:any_dimensional_gold_ore"
           },
           "state": {
             "Name": "adm2:any_dimensional_diamond_ore"
@@ -3608,25 +3887,25 @@
         {
           "target": {
             "predicate_type": "minecraft:block_match",
-            "block": "adm2:any_dimensional_gold_ore"
-          },
-          "state": {
-            "Name": "adm2:any_dimensional_diamond_ore"
-          }
-        },
-        {
-          "target": {
-            "predicate_type": "minecraft:block_match",
-            "block": "adm2:any_dimensional_iron_ore"
-          },
-          "state": {
-            "Name": "adm2:any_dimensional_diamond_ore"
-          }
-        },
-        {
-          "target": {
-            "predicate_type": "minecraft:block_match",
             "block": "adm2:any_dimensional_lapis_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "adm2:any_dimensional_redstone_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_diamond_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "adm2:any_dimensional_copper_ore"
           },
           "state": {
             "Name": "adm2:any_dimensional_diamond_ore"
@@ -3644,7 +3923,7 @@
         {
           "target": {
             "predicate_type": "minecraft:block_match",
-            "block": "adm2:any_dimensional_redstone_ore"
+            "block": "adm2:any_dimensional_block"
           },
           "state": {
             "Name": "adm2:any_dimensional_diamond_ore"

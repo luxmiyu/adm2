@@ -45,7 +45,7 @@ public class ListWandItem extends WandItem {
             }
         }
 
-        player.teleport(pos.getX(), pos.getY() + 1, pos.getZ());
+        player.teleport(pos.getX(), pos.getY() + 1, pos.getZ(), true);
 
         player.sendMessage(Adm2Util.textReplaceable("message.adm2.list_blocks", String.valueOf(blocks.size())), true);
     }
@@ -68,7 +68,7 @@ public class ListWandItem extends WandItem {
             }
         }
 
-        player.teleport(pos.getX(), pos.getY() + 5, pos.getZ());
+        player.teleport(pos.getX(), pos.getY() + 5, pos.getZ(), true);
 
         player.sendMessage(Adm2Util.textReplaceable("message.adm2.list_portals", String.valueOf(blocks.size())), true);
     }

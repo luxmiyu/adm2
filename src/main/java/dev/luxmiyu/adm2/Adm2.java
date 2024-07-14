@@ -54,7 +54,7 @@ public class Adm2 implements ModInitializer {
 
 	public static final ItemGroup ANY_DIMENSIONAL_ITEM_GROUP = Registry.register(
 		Registries.ITEM_GROUP,
-		new Identifier(Adm2.MOD_ID, "any_dimensional_item_group"),
+		Identifier.of(Adm2.MOD_ID, "any_dimensional_item_group"),
 
 		FabricItemGroup.builder()
 			.displayName(Text.translatable("adm2.display_name"))
@@ -90,12 +90,12 @@ public class Adm2 implements ModInitializer {
 			}).build());
 
 	private static Item registerItem(String name, Item item) {
-		return Registry.register(Registries.ITEM, new Identifier(Adm2.MOD_ID, name), item);
+		return Registry.register(Registries.ITEM, Identifier.of(Adm2.MOD_ID, name), item);
 	}
 
 	private static Block registerBlock(String name, Block block) {
 		registerItem(name, new BlockItem(block, new Item.Settings()));
-		return Registry.register(Registries.BLOCK, new Identifier(Adm2.MOD_ID, name), block);
+		return Registry.register(Registries.BLOCK, Identifier.of(Adm2.MOD_ID, name), block);
 	}
 
 	private static void registerCommands() {
@@ -112,7 +112,8 @@ public class Adm2 implements ModInitializer {
 		LOGGER.info("Initializing Any Dimension Mod 2");
 		registerCommands();
 
+		// TODO: Wait for CustomPortalAPI to update to 1.21
 		// register Custom Portal API portal links on server start
-		ServerLifecycleEvents.SERVER_STARTED.register(Adm2Util::onServerStart);
+//		ServerLifecycleEvents.SERVER_STARTED.register(Adm2Util::onServerStart);
 	}
 }
