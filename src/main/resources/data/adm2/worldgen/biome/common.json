@@ -1,0 +1,69 @@
+{
+  "temperature": 1,
+  "downfall": 0.5,
+  "has_precipitation": false,
+  "temperature_modifier": "none",
+  "creature_spawn_probability": 0,
+  "effects": {
+    "sky_color": 13421772,
+    "fog_color": 13421772,
+    "water_color": 13421772,
+    "water_fog_color": 13421772
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "adm2:caves",
+      "adm2:canyons"
+    ],
+    "liquid": []
+  },
+  "features": [
+    [
+      "adm2:tnt"
+    ],
+    [
+      "adm2:pearlescent_froglight"
+    ],
+    [
+      "adm2:sand"
+    ],
+    [
+      "adm2:gravel"
+    ],
+    [
+      "adm2:adm2_any_dimensional_sand"
+    ],
+    [
+      "adm2:adm2_any_dimensional_coal_ore"
+    ],
+    [
+      "adm2:adm2_any_dimensional_copper_ore"
+    ],
+    [
+      "adm2:adm2_any_dimensional_diamond_ore"
+    ],
+    [
+      "adm2:adm2_any_dimensional_emerald_ore"
+    ],
+    [
+      "adm2:adm2_any_dimensional_gold_ore"
+    ],
+    [
+      "adm2:adm2_any_dimensional_iron_ore"
+    ],
+    [
+      "adm2:adm2_any_dimensional_lapis_ore"
+    ],
+    [
+      "adm2:adm2_any_dimensional_quartz_ore"
+    ],
+    [
+      "adm2:adm2_any_dimensional_redstone_ore"
+    ],
+    [
+      "adm2:iceberg"
+    ]
+  ]
+}

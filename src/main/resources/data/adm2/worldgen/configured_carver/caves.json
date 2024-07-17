@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:cave",
+  "config": {
+    "probability": 1,
+    "y": {
+      "type": "minecraft:uniform",
+      "min_inclusive": {
+        "above_bottom": 0
+      },
+      "max_inclusive": {
+        "below_top": 0
+      }
+    },
+    "yScale": 1,
+    "lava_level": {
+      "absolute": 0
+    },
+    "replaceable": "minecraft:stone",
+    "debug_settings": {
+      "debug_mode": true,
+      "air_state": {
+        "Name": "minecraft:air"
+      },
+      "water_state": {
+        "Name": "minecraft:water"
+      },
+      "lava_state": {
+        "Name": "minecraft:lava"
+      },
+      "barrier_state": {
+        "Name": "minecraft:air"
+      }
+    },
+    "horizontal_radius_multiplier": 1,
+    "vertical_radius_multiplier": 1,
+    "floor_level": -0.7
+  }
+}

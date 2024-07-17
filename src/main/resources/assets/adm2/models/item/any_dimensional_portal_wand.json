@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "adm2:item/any_dimensional_portal_wand"
+  }
+}

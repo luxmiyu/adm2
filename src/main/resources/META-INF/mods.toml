@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "adm2"
+version = "${version}"
+displayName = "Any Dimension Mod 2"
+authors = "luxmiyu"
+description = '''
+Create dimensions out of any block! This mod adds 400+ dimensions to the game, one for each of the possible blocks.
+'''
+logoFile = "icon.png"
+
+[[dependencies.adm2]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.adm2]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
