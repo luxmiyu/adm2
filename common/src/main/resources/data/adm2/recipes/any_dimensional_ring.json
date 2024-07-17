@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " O ",
+    "O O",
+    " O "
+  ],
+  "key": {
+    "O": {
+      "item": "adm2:any_dimensional_block"
+    }
+  },
+  "result": {
+    "item": "adm2:any_dimensional_ring"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "adm2:any_dimensional_sand",
+    "adm2:any_dimensional_coal_ore",
+    "adm2:any_dimensional_copper_ore",
+    "adm2:any_dimensional_diamond_ore",
+    "adm2:any_dimensional_emerald_ore",
+    "adm2:any_dimensional_gold_ore",
+    "adm2:any_dimensional_iron_ore",
+    "adm2:any_dimensional_lapis_ore",
+    "adm2:any_dimensional_quartz_ore",
+    "adm2:any_dimensional_redstone_ore"
+  ]
+}

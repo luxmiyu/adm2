@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "${group}",
+    "id": "adm2",
+    "version": "${version}",
+    "metadata": {
+      "name": "Any Dimension Mod 2",
+      "description": "Create dimensions out of any block! This mod adds 400+ dimensions to the game, one for each of the possible blocks.",
+      "contributors": {
+        "luxmiyu": "Author"
+      },
+      "icon": "icon.png"
+    },
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "entrypoints": {
+      "init": [
+        "dev.luxmiyu.adm2.quilt.Adm2Quilt"
+      ]
+    },
+    "contact": {
+      "homepage": "https://luxmiyu.com/adm2",
+      "sources": "https://github.com/luxmiyu/adm2",
+      "issues": "https://github.com/luxmiyu/adm2/issues"
+    },
+    "license": "MIT",
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "version": "*"
+      },
+      {
+        "id": "quilt_base",
+        "version": "*"
+      },
+      {
+        "id": "minecraft",
+        "version": ">=1.21"
+      },
+      {
+        "id": "architectury",
+        "version": ">=13.0.2"
+      }
+    ]
+  },
+  "suggests": [
+    {
+      "id": "modmenu",
+      "version": "*"
+    },
+    {
+      "id": "immersive_portals",
+      "version": "*"
+    }
+  ],
+  "mixin": [],
+  "custom": {
+    "modmenu": {
+      "links": {
+        "adm2.discord": "https://discord.gg/komimau",
+        "adm2.luxmiyu": "https://luxmiyu.com"
+      },
+      "badges": [],
+      "update_checker": true
+    }
+  }
+}

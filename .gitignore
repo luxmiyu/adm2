@@ -1,2 +1,9 @@
 .idea/
-.idea/*
+.gradle/
+run/
+/common/build/
+/fabric/build/
+/quilt/build/
+/common/build/*
+/fabric/build/*
+/quilt/build/*

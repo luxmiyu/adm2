@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "group": "lapis_lazuli",
+  "ingredient": {
+    "item": "adm2:any_dimensional_lapis_ore"
+  },
+  "result": "minecraft:lapis_lazuli",
+  "experience": 0.1,
+  "cookingtime": 100
+}

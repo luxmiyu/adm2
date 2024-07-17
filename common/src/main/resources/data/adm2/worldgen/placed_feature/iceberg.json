@@ -1,0 +1,22 @@
+{
+  "feature": {
+    "type": "minecraft:iceberg",
+    "config": {
+      "state": {
+        "Name": "adm2:any_dimensional_block"
+      }
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 16
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

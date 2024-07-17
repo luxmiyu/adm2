@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "adm2:any_dimensional_portal_wand"
+    }
+  ],
+  "result": {
+    "item": "adm2:any_dimensional_portal_wand_classic"
+  }
+}

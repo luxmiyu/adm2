@@ -1,0 +1,11 @@
+{
+  "type": "adm2:common",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "adm2:minecraft__obsidian",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "adm2:common"
+    }
+  }
+}

@@ -1,0 +1,3959 @@
+{
+  "feature": {
+    "type": "minecraft:ore",
+    "config": {
+      "size": 8,
+      "discard_chance_on_air_exposure": 0,
+      "targets": [
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stone"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:granite"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:polished_granite"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:diorite"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:polished_diorite"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:andesite"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:polished_andesite"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:grass_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:dirt"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:coarse_dirt"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:podzol"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:cobblestone"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:oak_planks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:spruce_planks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:birch_planks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:jungle_planks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:acacia_planks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:cherry_planks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:dark_oak_planks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:mangrove_planks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:bamboo_planks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:bamboo_mosaic"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:bedrock"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:sand"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:suspicious_sand"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:red_sand"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:gravel"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:suspicious_gravel"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:gold_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:deepslate_gold_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:iron_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:deepslate_iron_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:coal_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:deepslate_coal_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:nether_gold_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:oak_log"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:spruce_log"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:birch_log"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:jungle_log"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:acacia_log"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:cherry_log"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:dark_oak_log"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:mangrove_log"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:mangrove_roots"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:muddy_mangrove_roots"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:bamboo_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stripped_spruce_log"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stripped_birch_log"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stripped_jungle_log"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stripped_acacia_log"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stripped_cherry_log"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stripped_dark_oak_log"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stripped_oak_log"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stripped_mangrove_log"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stripped_bamboo_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:oak_wood"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:spruce_wood"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:birch_wood"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:jungle_wood"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:acacia_wood"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:cherry_wood"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:dark_oak_wood"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:mangrove_wood"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stripped_oak_wood"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stripped_spruce_wood"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stripped_birch_wood"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stripped_jungle_wood"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stripped_acacia_wood"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stripped_cherry_wood"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stripped_dark_oak_wood"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stripped_mangrove_wood"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:oak_leaves"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:spruce_leaves"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:birch_leaves"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:jungle_leaves"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:acacia_leaves"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:cherry_leaves"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:dark_oak_leaves"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:mangrove_leaves"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:azalea_leaves"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:flowering_azalea_leaves"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:sponge"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:wet_sponge"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:glass"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:lapis_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:deepslate_lapis_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:lapis_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:dispenser"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:sandstone"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:chiseled_sandstone"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:cut_sandstone"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:note_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:sticky_piston"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:piston"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:white_wool"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:orange_wool"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:magenta_wool"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:light_blue_wool"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:yellow_wool"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:lime_wool"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:pink_wool"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:gray_wool"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:light_gray_wool"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:cyan_wool"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:purple_wool"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:blue_wool"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:brown_wool"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:green_wool"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:red_wool"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:black_wool"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:gold_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:iron_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:bricks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:tnt"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:bookshelf"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:chiseled_bookshelf"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:mossy_cobblestone"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:obsidian"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:spawner"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:diamond_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:deepslate_diamond_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:diamond_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:crafting_table"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:furnace"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:redstone_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:deepslate_redstone_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:ice"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:snow_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:clay"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:jukebox"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:netherrack"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:soul_sand"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:soul_soil"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:basalt"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:polished_basalt"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:glowstone"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:carved_pumpkin"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:jack_o_lantern"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:white_stained_glass"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:orange_stained_glass"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:magenta_stained_glass"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:light_blue_stained_glass"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:yellow_stained_glass"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:lime_stained_glass"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:pink_stained_glass"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:gray_stained_glass"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:light_gray_stained_glass"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:cyan_stained_glass"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:purple_stained_glass"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:blue_stained_glass"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:brown_stained_glass"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:green_stained_glass"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:red_stained_glass"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:black_stained_glass"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stone_bricks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:mossy_stone_bricks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:cracked_stone_bricks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:chiseled_stone_bricks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:packed_mud"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:mud_bricks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:infested_stone"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:infested_cobblestone"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:infested_stone_bricks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:infested_mossy_stone_bricks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:infested_cracked_stone_bricks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:infested_chiseled_stone_bricks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:brown_mushroom_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:red_mushroom_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:mushroom_stem"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:pumpkin"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:melon"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:mycelium"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:nether_bricks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:end_stone"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:redstone_lamp"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:emerald_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:deepslate_emerald_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:emerald_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:command_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:beacon"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:redstone_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:nether_quartz_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:quartz_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:chiseled_quartz_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:quartz_pillar"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:dropper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:white_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:orange_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:magenta_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:light_blue_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:yellow_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:lime_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:pink_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:gray_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:light_gray_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:cyan_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:purple_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:blue_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:brown_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:green_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:red_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:black_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:slime_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:barrier"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:prismarine"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:prismarine_bricks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:dark_prismarine"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:sea_lantern"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:hay_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:coal_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:packed_ice"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:red_sandstone"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:chiseled_red_sandstone"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:cut_red_sandstone"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:smooth_stone"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:smooth_sandstone"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:smooth_quartz"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:smooth_red_sandstone"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:purpur_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:purpur_pillar"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:end_stone_bricks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:repeating_command_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:chain_command_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:frosted_ice"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:magma_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:nether_wart_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:red_nether_bricks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:bone_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:observer"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:shulker_box"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:white_shulker_box"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:orange_shulker_box"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:magenta_shulker_box"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:light_blue_shulker_box"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:yellow_shulker_box"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:lime_shulker_box"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:pink_shulker_box"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:gray_shulker_box"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:light_gray_shulker_box"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:cyan_shulker_box"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:purple_shulker_box"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:blue_shulker_box"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:brown_shulker_box"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:green_shulker_box"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:red_shulker_box"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:black_shulker_box"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:white_glazed_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:orange_glazed_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:magenta_glazed_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:light_blue_glazed_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:yellow_glazed_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:lime_glazed_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:pink_glazed_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:gray_glazed_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:light_gray_glazed_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:cyan_glazed_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:purple_glazed_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:blue_glazed_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:brown_glazed_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:green_glazed_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:red_glazed_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:black_glazed_terracotta"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:white_concrete"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:orange_concrete"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:magenta_concrete"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:light_blue_concrete"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:yellow_concrete"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:lime_concrete"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:pink_concrete"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:gray_concrete"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:light_gray_concrete"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:cyan_concrete"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:purple_concrete"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:blue_concrete"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:brown_concrete"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:green_concrete"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:red_concrete"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:black_concrete"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:white_concrete_powder"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:orange_concrete_powder"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:magenta_concrete_powder"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:light_blue_concrete_powder"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:yellow_concrete_powder"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:lime_concrete_powder"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:pink_concrete_powder"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:gray_concrete_powder"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:light_gray_concrete_powder"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:cyan_concrete_powder"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:purple_concrete_powder"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:blue_concrete_powder"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:brown_concrete_powder"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:green_concrete_powder"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:red_concrete_powder"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:black_concrete_powder"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:dried_kelp_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:dead_tube_coral_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:dead_brain_coral_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:dead_bubble_coral_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:dead_fire_coral_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:dead_horn_coral_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:tube_coral_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:brain_coral_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:bubble_coral_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:fire_coral_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:horn_coral_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:blue_ice"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:loom"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:barrel"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:smoker"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:blast_furnace"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:cartography_table"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:fletching_table"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:smithing_table"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stonecutter"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:warped_stem"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stripped_warped_stem"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:warped_hyphae"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stripped_warped_hyphae"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:warped_nylium"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:warped_wart_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:crimson_stem"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stripped_crimson_stem"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:crimson_hyphae"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stripped_crimson_hyphae"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:crimson_nylium"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:shroomlight"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:crimson_planks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:warped_planks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:structure_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:jigsaw"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:target"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:bee_nest"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:beehive"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:honeycomb_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:netherite_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:ancient_debris"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:crying_obsidian"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:respawn_anchor"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:lodestone"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:blackstone"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:polished_blackstone"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:polished_blackstone_bricks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:cracked_polished_blackstone_bricks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:chiseled_polished_blackstone"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:gilded_blackstone"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:chiseled_nether_bricks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:cracked_nether_bricks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:quartz_bricks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:amethyst_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:budding_amethyst"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:tuff"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:polished_tuff"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:chiseled_tuff"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:tuff_bricks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:chiseled_tuff_bricks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:calcite"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:tinted_glass"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:sculk"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:sculk_catalyst"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:copper_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:exposed_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:weathered_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:oxidized_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:copper_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:deepslate_copper_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:oxidized_cut_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:weathered_cut_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:exposed_cut_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:cut_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:oxidized_chiseled_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:weathered_chiseled_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:exposed_chiseled_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:chiseled_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_oxidized_chiseled_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_weathered_chiseled_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_exposed_chiseled_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_chiseled_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_copper_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_weathered_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_exposed_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_oxidized_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_oxidized_cut_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_weathered_cut_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_exposed_cut_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_cut_copper"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:copper_grate"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:exposed_copper_grate"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:weathered_copper_grate"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:oxidized_copper_grate"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_copper_grate"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_exposed_copper_grate"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_weathered_copper_grate"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_oxidized_copper_grate"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:copper_bulb"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:exposed_copper_bulb"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:weathered_copper_bulb"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:oxidized_copper_bulb"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_copper_bulb"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_exposed_copper_bulb"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_weathered_copper_bulb"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:waxed_oxidized_copper_bulb"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:dripstone_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:moss_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:rooted_dirt"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:deepslate"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:cobbled_deepslate"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:polished_deepslate"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:deepslate_tiles"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:deepslate_bricks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:chiseled_deepslate"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:cracked_deepslate_bricks"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:cracked_deepslate_tiles"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:infested_deepslate"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:smooth_basalt"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:raw_iron_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:raw_copper_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:raw_gold_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:ochre_froglight"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:verdant_froglight"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:pearlescent_froglight"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:reinforced_deepslate"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:crafter"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:trial_spawner"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:vault"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "adm2:any_dimensional_sand"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "adm2:any_dimensional_coal_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "adm2:any_dimensional_iron_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "adm2:any_dimensional_gold_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "adm2:any_dimensional_diamond_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "adm2:any_dimensional_emerald_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "adm2:any_dimensional_lapis_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "adm2:any_dimensional_redstone_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "adm2:any_dimensional_copper_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "adm2:any_dimensional_quartz_ore"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "adm2:any_dimensional_block"
+          },
+          "state": {
+            "Name": "adm2:any_dimensional_quartz_ore"
+          }
+        }
+      ]
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 4
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "above_bottom": 0
+        },
+        "max_inclusive": {
+          "below_top": 0
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

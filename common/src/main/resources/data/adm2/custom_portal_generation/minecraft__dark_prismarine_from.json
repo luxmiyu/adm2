@@ -1,0 +1,18 @@
+{
+  "schema_version": "imm_ptl:v1",
+  "from": [
+    "adm2:minecraft__dark_prismarine"
+  ],
+  "to": "minecraft:overworld",
+  "form": {
+    "type": "imm_ptl:classical",
+    "from_frame_block": "minecraft:dark_prismarine",
+    "area_block": "minecraft:air",
+    "to_frame_block": "minecraft:dark_prismarine",
+    "generate_frame_if_not_found": true
+  },
+  "trigger": {
+    "type": "imm_ptl:use_item",
+    "item": "adm2:any_dimensional_portal_wand"
+  }
+}
