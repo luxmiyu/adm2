@@ -1,10 +1,10 @@
 package dev.luxmiyu.adm2;
 
+import dev.luxmiyu.adm2.block.Adm2SandBlock;
 import dev.luxmiyu.adm2.item.*;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.FallingBlock;
 import net.minecraft.item.*;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
@@ -45,16 +45,16 @@ public final class Adm2 {
     public static final RegistryObject<Item> ANY_DIMENSIONAL_ROD = ITEMS.register("any_dimensional_rod", () -> new Item(new Item.Settings()));
     public static final RegistryObject<Item> ANY_DIMENSIONAL_RING = ITEMS.register("any_dimensional_ring", () -> new Item(new Item.Settings()));
 
-    public static final RegistryObject<Block> ANY_DIMENSIONAL_SAND = registerBlock("any_dimensional_sand", () -> new FallingBlock(SAND_SETTINGS));
-    public static final RegistryObject<Block> ANY_DIMENSIONAL_COAL_ORE = registerBlock("any_dimensional_coal_ore", () -> new FallingBlock(SAND_SETTINGS));
-    public static final RegistryObject<Block> ANY_DIMENSIONAL_IRON_ORE = registerBlock("any_dimensional_iron_ore", () -> new FallingBlock(SAND_SETTINGS));
-    public static final RegistryObject<Block> ANY_DIMENSIONAL_GOLD_ORE = registerBlock("any_dimensional_gold_ore", () -> new FallingBlock(SAND_SETTINGS));
-    public static final RegistryObject<Block> ANY_DIMENSIONAL_DIAMOND_ORE = registerBlock("any_dimensional_diamond_ore", () -> new FallingBlock(SAND_SETTINGS));
-    public static final RegistryObject<Block> ANY_DIMENSIONAL_EMERALD_ORE = registerBlock("any_dimensional_emerald_ore", () -> new FallingBlock(SAND_SETTINGS));
-    public static final RegistryObject<Block> ANY_DIMENSIONAL_LAPIS_ORE = registerBlock("any_dimensional_lapis_ore", () -> new FallingBlock(SAND_SETTINGS));
-    public static final RegistryObject<Block> ANY_DIMENSIONAL_REDSTONE_ORE = registerBlock("any_dimensional_redstone_ore", () -> new FallingBlock(SAND_SETTINGS));
-    public static final RegistryObject<Block> ANY_DIMENSIONAL_COPPER_ORE = registerBlock("any_dimensional_copper_ore", () -> new FallingBlock(SAND_SETTINGS));
-    public static final RegistryObject<Block> ANY_DIMENSIONAL_QUARTZ_ORE = registerBlock("any_dimensional_quartz_ore", () -> new FallingBlock(SAND_SETTINGS));
+    public static final RegistryObject<Block> ANY_DIMENSIONAL_SAND = registerBlock("any_dimensional_sand", () -> new Adm2SandBlock(SAND_SETTINGS));
+    public static final RegistryObject<Block> ANY_DIMENSIONAL_COAL_ORE = registerBlock("any_dimensional_coal_ore", () -> new Adm2SandBlock(SAND_SETTINGS));
+    public static final RegistryObject<Block> ANY_DIMENSIONAL_IRON_ORE = registerBlock("any_dimensional_iron_ore", () -> new Adm2SandBlock(SAND_SETTINGS));
+    public static final RegistryObject<Block> ANY_DIMENSIONAL_GOLD_ORE = registerBlock("any_dimensional_gold_ore", () -> new Adm2SandBlock(SAND_SETTINGS));
+    public static final RegistryObject<Block> ANY_DIMENSIONAL_DIAMOND_ORE = registerBlock("any_dimensional_diamond_ore", () -> new Adm2SandBlock(SAND_SETTINGS));
+    public static final RegistryObject<Block> ANY_DIMENSIONAL_EMERALD_ORE = registerBlock("any_dimensional_emerald_ore", () -> new Adm2SandBlock(SAND_SETTINGS));
+    public static final RegistryObject<Block> ANY_DIMENSIONAL_LAPIS_ORE = registerBlock("any_dimensional_lapis_ore", () -> new Adm2SandBlock(SAND_SETTINGS));
+    public static final RegistryObject<Block> ANY_DIMENSIONAL_REDSTONE_ORE = registerBlock("any_dimensional_redstone_ore", () -> new Adm2SandBlock(SAND_SETTINGS));
+    public static final RegistryObject<Block> ANY_DIMENSIONAL_COPPER_ORE = registerBlock("any_dimensional_copper_ore", () -> new Adm2SandBlock(SAND_SETTINGS));
+    public static final RegistryObject<Block> ANY_DIMENSIONAL_QUARTZ_ORE = registerBlock("any_dimensional_quartz_ore", () -> new Adm2SandBlock(SAND_SETTINGS));
     public static final RegistryObject<Block> ANY_DIMENSIONAL_BLOCK = registerBlock("any_dimensional_block", () -> new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
 
     public static final DeferredRegister<ItemGroup> TABS = DeferredRegister.create(RegistryKeys.ITEM_GROUP, MOD_ID);
