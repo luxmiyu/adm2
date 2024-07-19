@@ -4,6 +4,8 @@ import dev.luxmiyu.adm2.portal.Portal;
 import dev.luxmiyu.adm2.portal.PortalArea;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -32,6 +34,8 @@ public class PortalWandClassicItem extends WandItem {
             if (block != null) {
                 areaX.placeIn(world);
                 placedX = true;
+
+                world.playSound(null, pos, SoundEvents.ITEM_FLINTANDSTEEL_USE, SoundCategory.BLOCKS, 1f, 1f);
             }
         }
 
@@ -40,6 +44,8 @@ public class PortalWandClassicItem extends WandItem {
 
             if (block != null && !placedX) {
                 areaZ.placeIn(world);
+
+                world.playSound(null, pos, SoundEvents.ITEM_FLINTANDSTEEL_USE, SoundCategory.BLOCKS, 1f, 1f);
             }
         }
 

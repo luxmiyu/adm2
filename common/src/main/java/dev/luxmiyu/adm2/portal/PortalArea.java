@@ -136,7 +136,7 @@ public record PortalArea(int minX, int minY, int minZ, int maxX, int maxY, int m
     }
 
     public Vec3d getCenterVec() {
-        return new Vec3d((double) (minX + maxX) / 2 + 0.5d, minY + 0.5d, (double) (minZ + maxZ) / 2 + 0.5d);
+        return new Vec3d((double) (minX + maxX) / 2 + 0.5d, minY + 0.1d, (double) (minZ + maxZ) / 2 + 0.5d);
     }
 
     public BlockPos getCenterPos() {
