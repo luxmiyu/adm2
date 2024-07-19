@@ -20,7 +20,7 @@ public class PortalWandItem extends WandItem {
         World world = context.getWorld();
         if (world.isClient) return ActionResult.SUCCESS;
 
-        if (!Adm2.isModLoaded("immersive_portals")) {
+        if (Adm2.isModLoaded("immersive_portals")) {
             return ActionResult.SUCCESS;
         }
 

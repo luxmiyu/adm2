@@ -7,3 +7,5 @@ run/
 /common/build/*
 /fabric/build/*
 /quilt/build/*
+/neoforge/build/
+/neoforge/build/*

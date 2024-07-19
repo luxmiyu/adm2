@@ -76,29 +76,31 @@ public record BoxArea(BlockPos center) {
     /**
      * Get edge positions for each radius from 0, like onion layers.
      * @param radius the maximum radius
-     * @return an array of edge positions for each radius from 0
+     * @return an array of layers, each layer containing edge positions
      */
-    public BlockPos[][] getEdges(int radius) {
-        BlockPos[][] edges = new BlockPos[radius + 1][];
-        List<BlockPos>[] lists = new List[radius + 1];
+    public BlockPos[][] getEdgeLayers(int radius) {
+        int layerCount = radius + 1;
+
+        BlockPos[][] layers = new BlockPos[layerCount][];
+        List<List<BlockPos>> lists = new ArrayList<>(layerCount);
 
         for (int i = 0; i <= radius; i++) {
-            lists[i] = new ArrayList<>();
+            lists.add(new ArrayList<>());
         }
 
         for (int x = -radius; x <= radius; x++) {
             for (int y = -radius; y <= radius; y++) {
                 for (int z = -radius; z <= radius; z++) {
-                    int edge = max(Math.abs(x), Math.abs(y), Math.abs(z));
-                    lists[edge].add(new BlockPos(center.getX() + x, center.getY() + y, center.getZ() + z));
+                    int layer = max(Math.abs(x), Math.abs(y), Math.abs(z));
+                    lists.get(layer).add(new BlockPos(center.getX() + x, center.getY() + y, center.getZ() + z));
                 }
             }
         }
 
-        for (int i = 0; i <= radius; i++) {
-            edges[i] = lists[i].toArray(new BlockPos[0]);
+        for (int i = 0; i < layerCount; i++) {
+            layers[i] = lists.get(i).toArray(new BlockPos[0]);
         }
 
-        return edges;
+        return layers;
     }
 }

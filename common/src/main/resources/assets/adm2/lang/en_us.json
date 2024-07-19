@@ -48,6 +48,9 @@
   "message.adm2.blink_fail": "Dimension not found: %s",
   "message.adm2.useless": "You feel a sense of uselessness...",
 
+  "message.adm2.portal_null": "Portal is not valid",
+  "message.adm2.world_null": "Dimension not found",
+
   "tooltip.adm2.portal_wand": "Use on a portal frame to create a portal",
   "tooltip.adm2.portal_wand_classic": "With Immersive Portals, use this to create a classic portal instead",
   "tooltip.adm2.teleport_wand": "Use to teleport, use while sneaking to teleport on top",

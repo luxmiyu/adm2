@@ -148,7 +148,7 @@ public class Portal {
             }
         }
 
-        // prevent falling blocks from falling
+        // place a platform for falling blocks
         Block block = blockState.getBlock();
         if (block instanceof ColoredFallingBlock) {
             for (int i = -1; i < 2; i++) {
@@ -276,11 +276,11 @@ public class Portal {
 
     @Nullable
     public static PortalArea findPortal(World world, BlockPos center, Block block) {
-        BlockPos[][] edges = new BoxArea(center).getEdges(12);
+        BlockPos[][] layers = new BoxArea(center).getEdgeLayers(12);
         List<BlockPos> banned = new ArrayList<>(); // already checked
 
-        for (BlockPos[] edge : edges) {
-            for (BlockPos pos : edge) {
+        for (BlockPos[] layer : layers) {
+            for (BlockPos pos : layer) {
                 if (banned.contains(pos)) continue;
 
                 BlockState state = world.getBlockState(pos);
@@ -304,10 +304,10 @@ public class Portal {
     }
 
     public static BlockPos findEmptyArea(World world, BlockPos center, int radius) {
-        BlockPos[][] edges = new BoxArea(center).getEdges(12);
+        BlockPos[][] layers = new BoxArea(center).getEdgeLayers(12);
 
-        for (BlockPos[] edge : edges) {
-            for (BlockPos pos : edge) {
+        for (BlockPos[] layer : layers) {
+            for (BlockPos pos : layer) {
                 BoxArea box = new BoxArea(pos);
                 if (box.isAir(world, radius)) {
                     return pos;
