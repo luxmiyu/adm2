@@ -6,6 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
@@ -27,18 +28,21 @@ public record PortalArea(int minX, int minY, int minZ, int maxX, int maxY, int m
         return list.toArray(new BlockPos[0]);
     }
 
+    public int width() {
+        return getAxis() == Direction.Axis.X ? maxZ - minZ + 1 : maxX - minX + 1;
+    }
+
+    public int height() {
+        return maxY - minY + 1;
+    }
+
+    public boolean isBigEnough() {
+        return width() >= 2 && height() >= 3;
+    }
+
     public boolean isLit(World world) {
         for (BlockPos pos : getPositions()) {
             if (world.getBlockState(pos).getBlock() != Adm2.ANY_DIMENSIONAL_PORTAL_BLOCK.get()) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    public boolean isAir(World world) {
-        for (BlockPos pos : getPositions()) {
-            if (world.getBlockState(pos).getBlock() != Blocks.AIR) {
                 return false;
             }
         }
@@ -53,6 +57,12 @@ public record PortalArea(int minX, int minY, int minZ, int maxX, int maxY, int m
             }
         }
         return true;
+    }
+
+    @Nullable
+    public PortalArea validate(World world) {
+        if (isBigEnough() && isReplaceable(world)) return this;
+        return null;
     }
 
     public Direction.Axis getAxis() {
@@ -71,6 +81,11 @@ public record PortalArea(int minX, int minY, int minZ, int maxX, int maxY, int m
         }
     }
 
+    /**
+     * Get portal frame block
+     * @param world the world
+     * @return the frame block or null if the frame is not valid
+     */
     @Nullable
     public Block getFrame(World world) {
         // get the 4 sides of the portal blocks
@@ -118,5 +133,13 @@ public record PortalArea(int minX, int minY, int minZ, int maxX, int maxY, int m
         }
 
         return frameBlock;
+    }
+
+    public Vec3d getCenterVec() {
+        return new Vec3d((double) (minX + maxX) / 2 + 0.5d, minY + 0.5d, (double) (minZ + maxZ) / 2 + 0.5d);
+    }
+
+    public BlockPos getCenterPos() {
+        return new BlockPos((minX + maxX) / 2, minY, (minZ + maxZ) / 2);
     }
 }

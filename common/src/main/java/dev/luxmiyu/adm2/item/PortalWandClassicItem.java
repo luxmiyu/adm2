@@ -1,10 +1,13 @@
 package dev.luxmiyu.adm2.item;
 
-import dev.luxmiyu.adm2.Adm2;
-import net.minecraft.entity.player.PlayerEntity;
+import dev.luxmiyu.adm2.portal.Portal;
+import dev.luxmiyu.adm2.portal.PortalArea;
+import net.minecraft.block.Block;
 import net.minecraft.item.ItemUsageContext;
-import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.world.World;
 
 public class PortalWandClassicItem extends WandItem {
     public PortalWandClassicItem(Settings settings) {
@@ -13,21 +16,33 @@ public class PortalWandClassicItem extends WandItem {
 
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
-        if (Adm2.isModLoaded("immersive_portals")) {
-            // TODO: Add portals
-            if (context.getPlayer() != null)
-                context.getPlayer().sendMessage(Text.literal("Portals disabled in this Alpha version, use Blink Wand instead").withColor(0xffff00), true);
-            return ActionResult.SUCCESS;
-        } else {
-            PlayerEntity player = context.getPlayer();
+        World world = context.getWorld();
+        if (world.isClient) return ActionResult.SUCCESS;
 
-            if (player == null) return ActionResult.FAIL;
+        Direction hitSide = context.getSide();
+        BlockPos pos = context.getBlockPos().offset(hitSide);
+        PortalArea areaX = Portal.findPortalArea(world, pos, Direction.Axis.X);
+        PortalArea areaZ = Portal.findPortalArea(world, pos, Direction.Axis.Z);
 
-            if (!context.getWorld().isClient()) {
-                player.sendMessage(Text.translatable("message.adm2.portal_wand_classic_fail"), true);
+        boolean placedX = false;
+
+        if (areaX != null) {
+            Block block = areaX.getFrame(world);
+
+            if (block != null) {
+                areaX.placeIn(world);
+                placedX = true;
             }
-
-            return ActionResult.SUCCESS;
         }
+
+        if (areaZ != null) {
+            Block block = areaZ.getFrame(world);
+
+            if (block != null && !placedX) {
+                areaZ.placeIn(world);
+            }
+        }
+
+        return ActionResult.SUCCESS;
     }
 }

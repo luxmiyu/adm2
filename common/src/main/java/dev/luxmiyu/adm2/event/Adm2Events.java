@@ -32,14 +32,16 @@ public class Adm2Events {
             Identifier blockId = Registries.BLOCK.getId(block);
             Identifier portalId = Registries.BLOCK.getId(Adm2.ANY_DIMENSIONAL_PORTAL_BLOCK.get());
 
-            if (blockId.equals(portalId) && !Adm2.TELEPORT_MANAGER.hasTeleported(player.getUuid())) {
+            if (blockId.equals(portalId)) {
+                if (Adm2.TELEPORT_MANAGER.hasTeleported(player.getUuid())) return;
+
                 player.addStatusEffect(new StatusEffectInstance(StatusEffects.LUCK, 30, 0, true, true));
 
                 Adm2.TELEPORT_MANAGER.tick(player.getUuid());
 
                 if (Adm2.TELEPORT_MANAGER.shouldTeleport(player.getUuid())) {
                     Portal.attemptTeleport(player);
-                    Adm2.TELEPORT_MANAGER.resetCooldown(player.getUuid());
+                    Adm2.TELEPORT_MANAGER.onPlayerTeleport(player.getUuid());
                 }
             } else {
                 Adm2.TELEPORT_MANAGER.resetCooldown(player.getUuid());

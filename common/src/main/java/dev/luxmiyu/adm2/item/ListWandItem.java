@@ -74,7 +74,7 @@ public class ListWandItem extends WandItem {
 
             BlockPos portalPos = pos.add(x * 5, 0, z * 5);
 
-            Portal.generatePortal(world, portalPos, Direction.Axis.Z, frameState, floorState);
+            Portal.generatePortalWithFloor(world, portalPos, Direction.Axis.Z, frameState, floorState);
 
             x++;
 

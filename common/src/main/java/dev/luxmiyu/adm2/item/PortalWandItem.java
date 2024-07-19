@@ -20,34 +20,34 @@ public class PortalWandItem extends WandItem {
         World world = context.getWorld();
         if (world.isClient) return ActionResult.SUCCESS;
 
-        if (Adm2.isModLoaded("immersive_portals")) {
-            return ActionResult.SUCCESS;
-        } else {
-            Direction hitSide = context.getSide();
-            BlockPos pos = context.getBlockPos().offset(hitSide);
-            PortalArea areaX = Portal.findPortalArea(world, pos, Direction.Axis.X);
-            PortalArea areaZ = Portal.findPortalArea(world, pos, Direction.Axis.Z);
-
-            boolean placedX = false;
-
-            if (areaX != null) {
-                Block block = areaX.getFrame(world);
-
-                if (block != null) {
-                    areaX.placeIn(world);
-                    placedX = true;
-                }
-            }
-
-            if (areaZ != null) {
-                Block block = areaZ.getFrame(world);
-
-                if (block != null && !placedX) {
-                    areaZ.placeIn(world);
-                }
-            }
-
+        if (!Adm2.isModLoaded("immersive_portals")) {
             return ActionResult.SUCCESS;
         }
+
+        Direction hitSide = context.getSide();
+        BlockPos pos = context.getBlockPos().offset(hitSide);
+        PortalArea areaX = Portal.findPortalArea(world, pos, Direction.Axis.X);
+        PortalArea areaZ = Portal.findPortalArea(world, pos, Direction.Axis.Z);
+
+        boolean placedX = false;
+
+        if (areaX != null) {
+            Block block = areaX.getFrame(world);
+
+            if (block != null) {
+                areaX.placeIn(world);
+                placedX = true;
+            }
+        }
+
+        if (areaZ != null) {
+            Block block = areaZ.getFrame(world);
+
+            if (block != null && !placedX) {
+                areaZ.placeIn(world);
+            }
+        }
+
+        return ActionResult.SUCCESS;
     }
 }
