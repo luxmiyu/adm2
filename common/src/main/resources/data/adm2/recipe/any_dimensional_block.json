@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "ingredient": {
+    "item": "adm2:any_dimensional_sand"
+  },
+  "result": {
+    "id": "adm2:any_dimensional_block"
+  },
+  "experience": 0.7,
+  "cookingtime": 200
+}

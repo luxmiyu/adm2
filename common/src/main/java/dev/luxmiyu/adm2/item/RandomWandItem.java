@@ -3,7 +3,6 @@ package dev.luxmiyu.adm2.item;
 import dev.luxmiyu.adm2.portal.Portal;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.LeavesBlock;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemUsageContext;

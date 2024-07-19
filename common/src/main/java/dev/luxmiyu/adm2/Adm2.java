@@ -26,6 +26,7 @@ import org.slf4j.LoggerFactory;
 import java.util.Random;
 import java.util.function.Supplier;
 
+@SuppressWarnings("unused")
 public final class Adm2 {
     public static final String MOD_ID = "adm2";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
@@ -72,7 +73,7 @@ public final class Adm2 {
     public static final RegistrySupplier<Block> ANY_DIMENSIONAL_QUARTZ_ORE = registerBlock("any_dimensional_quartz_ore", () -> new AnyDimensionalSandBlock(SAND_SETTINGS));
     public static final RegistrySupplier<Block> ANY_DIMENSIONAL_BLOCK = registerBlock("any_dimensional_block", () -> new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
 
-    public static final RegistrySupplier<Block> ANY_DIMENSIONAL_PORTAL_BLOCK = registerBlock("any_dimensional_portal_block", () -> new AnyDimensionalPortalBlock(AbstractBlock.Settings.copy(Blocks.NETHER_PORTAL).strength(0f)));
+    public static final RegistrySupplier<Block> ANY_DIMENSIONAL_PORTAL_BLOCK = BLOCKS.register("any_dimensional_portal_block", () -> new AnyDimensionalPortalBlock(AbstractBlock.Settings.copy(Blocks.NETHER_PORTAL).strength(0f)));
 
     private static RegistrySupplier<Block> registerBlock(String name, Supplier<Block> blockSupplier) {
         RegistrySupplier<Block> block = BLOCKS.register(name, blockSupplier);

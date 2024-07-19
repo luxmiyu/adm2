@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "blocks",
+  "pattern": [
+    "SGS",
+    "GOG",
+    "SGS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:black_concrete_powder"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "G": {
+      "item": "minecraft:gravel"
+    }
+  },
+  "result": {
+    "id": "adm2:any_dimensional_sand",
+    "count": 4
+  }
+}

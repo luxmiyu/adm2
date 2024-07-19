@@ -49,10 +49,12 @@ public class DebugWandItem extends WandItem {
 
     private void printBlocksConsole(BlockView world, BlockPos blockPos, String modId, boolean checkFullCube) {
         Adm2.LOGGER.info("");
-        Adm2.LOGGER.info(checkFullCube ? "Printing full cube blocks at {} from {}" : "Printing all blocks at {}", blockPos.toShortString(), modId);
+        Adm2.LOGGER.info(checkFullCube ? "Printing full cube blocks at {} from {}" : "Printing all blocks at {} from {}", blockPos.toShortString(), modId);
 
         if (checkFullCube) {
-            Adm2.LOGGER.info("Sneak while using the Debug Wand to print all blocks instead.");
+            Adm2.LOGGER.info("Use while sneaking to print all available blocks.");
+        } else {
+            Adm2.LOGGER.info("Use while standing to print only full cube blocks.");
         }
         Adm2.LOGGER.info("");
 

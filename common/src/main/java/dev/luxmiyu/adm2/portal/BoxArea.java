@@ -74,7 +74,8 @@ public record BoxArea(BlockPos center) {
     }
 
     /**
-     * Get edge positions for each radius from 0, like onion layers.
+     * Get layers of {@code BlockPos} up to a certain {@code radius} from the center.
+     * Each layer contains edge positions from the center.
      * @param radius the maximum radius
      * @return an array of layers, each layer containing edge positions
      */

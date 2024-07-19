@@ -1,5 +1,6 @@
 package dev.luxmiyu.adm2.item;
 
+import dev.luxmiyu.adm2.Adm2;
 import dev.luxmiyu.adm2.portal.Portal;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -100,8 +101,10 @@ public class ListWandItem extends WandItem {
 
         if (player.isSneaking()) {
             listPortals(world, player, pos, blocks);
+            Adm2.LOGGER.info("Player {} listed portals at {}", player.getName(), pos);
         } else {
             listBlocks(world, player, pos, blocks);
+            Adm2.LOGGER.info("Player {} listed blocks at {}", player.getName(), pos);
         }
 
         return TypedActionResult.success(player.getStackInHand(hand));

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  O",
+    " I ",
+    "I  "
+  ],
+  "key": {
+    "O": {
+      "item": "adm2:any_dimensional_ring"
+    },
+    "I": {
+      "item": "adm2:any_dimensional_rod"
+    }
+  },
+  "result": {
+    "id": "adm2:any_dimensional_portal_wand",
+    "count": 1
+  }
+}
