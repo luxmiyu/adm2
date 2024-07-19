@@ -3,7 +3,6 @@ package dev.luxmiyu.adm2.item;
 import dev.luxmiyu.adm2.portal.Portal;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.LeavesBlock;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -73,65 +72,16 @@ public class SummonWandItem extends WandItem {
             double diffX = Math.abs(summonPosVec.getX() - playerPos.getX());
             double diffZ = Math.abs(summonPosVec.getZ() - playerPos.getZ());
 
-            Direction.Axis horizontal = diffX > diffZ ? Direction.Axis.Z : Direction.Axis.X;
-            Direction up = Direction.UP;
+            Direction.Axis horizontal = diffX > diffZ ? Direction.Axis.X : Direction.Axis.Z;
 
-            // #####
-            // #   #
-            // #   #
-            // #   #
-            // ##O##  O = summonPos
-            BlockPos[] framePositions = {
-                summonPos.offset(horizontal, -2).offset(up, 0),
-                summonPos.offset(horizontal, -1).offset(up, 0),
-                summonPos.offset(horizontal,  0).offset(up, 0),
-                summonPos.offset(horizontal,  1).offset(up, 0),
-                summonPos.offset(horizontal,  2).offset(up, 0),
-
-                summonPos.offset(horizontal, -2).offset(up, 1),
-                summonPos.offset(horizontal,  2).offset(up, 1),
-
-                summonPos.offset(horizontal, -2).offset(up, 2),
-                summonPos.offset(horizontal,  2).offset(up, 2),
-
-                summonPos.offset(horizontal, -2).offset(up, 3),
-                summonPos.offset(horizontal,  2).offset(up, 3),
-
-                summonPos.offset(horizontal, -2).offset(up, 4),
-                summonPos.offset(horizontal, -1).offset(up, 4),
-                summonPos.offset(horizontal,  0).offset(up, 4),
-                summonPos.offset(horizontal,  1).offset(up, 4),
-                summonPos.offset(horizontal,  2).offset(up, 4),
-            };
-
-            BlockPos[] airPositions = {
-                summonPos.offset(horizontal, -1).offset(up, 1),
-                summonPos.offset(horizontal,  0).offset(up, 1),
-                summonPos.offset(horizontal,  1).offset(up, 1),
-
-                summonPos.offset(horizontal, -1).offset(up, 2),
-                summonPos.offset(horizontal,  0).offset(up, 2),
-                summonPos.offset(horizontal,  1).offset(up, 2),
-
-                summonPos.offset(horizontal, -1).offset(up, 3),
-                summonPos.offset(horizontal,  0).offset(up, 3),
-                summonPos.offset(horizontal,  1).offset(up, 3),
-            };
-
-            BlockState frameBlock = savedBlock.getDefaultState();
-            BlockState airBlock = Blocks.AIR.getDefaultState();
+            BlockState frameState = savedBlock.getDefaultState();
 
             if (savedBlock instanceof LeavesBlock) {
-                frameBlock = frameBlock.with(LeavesBlock.PERSISTENT, true);
+                frameState = frameState.with(LeavesBlock.PERSISTENT, true);
             }
 
-            for (BlockPos pos : framePositions) {
-                world.setBlockState(pos, frameBlock);
-            }
-
-            for (BlockPos pos : airPositions) {
-                world.setBlockState(pos, airBlock);
-            }
+            Portal.placePortalFrame(world, summonPos, horizontal, frameState);
+            Portal.placePortalBlocks(world, summonPos, horizontal);
 
             Identifier id = Registries.BLOCK.getId(savedBlock);
             String blockName = Text.translatable("block." + id.toTranslationKey()).getString();

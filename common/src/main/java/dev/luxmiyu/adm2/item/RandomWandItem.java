@@ -49,67 +49,18 @@ public class RandomWandItem extends WandItem {
         double diffX = Math.abs(summonPosVec.getX() - playerPos.getX());
         double diffZ = Math.abs(summonPosVec.getZ() - playerPos.getZ());
 
-        Direction.Axis horizontal = diffX > diffZ ? Direction.Axis.Z : Direction.Axis.X;
-        Direction up = Direction.UP;
-
-        // #####
-        // #   #
-        // #   #
-        // #   #
-        // ##O##  O = summonPos
-        BlockPos[] framePositions = {
-            summonPos.offset(horizontal, -2).offset(up, 0),
-            summonPos.offset(horizontal, -1).offset(up, 0),
-            summonPos.offset(horizontal,  0).offset(up, 0),
-            summonPos.offset(horizontal,  1).offset(up, 0),
-            summonPos.offset(horizontal,  2).offset(up, 0),
-
-            summonPos.offset(horizontal, -2).offset(up, 1),
-            summonPos.offset(horizontal,  2).offset(up, 1),
-
-            summonPos.offset(horizontal, -2).offset(up, 2),
-            summonPos.offset(horizontal,  2).offset(up, 2),
-
-            summonPos.offset(horizontal, -2).offset(up, 3),
-            summonPos.offset(horizontal,  2).offset(up, 3),
-
-            summonPos.offset(horizontal, -2).offset(up, 4),
-            summonPos.offset(horizontal, -1).offset(up, 4),
-            summonPos.offset(horizontal,  0).offset(up, 4),
-            summonPos.offset(horizontal,  1).offset(up, 4),
-            summonPos.offset(horizontal,  2).offset(up, 4),
-        };
-
-        BlockPos[] airPositions = {
-            summonPos.offset(horizontal, -1).offset(up, 1),
-            summonPos.offset(horizontal,  0).offset(up, 1),
-            summonPos.offset(horizontal,  1).offset(up, 1),
-
-            summonPos.offset(horizontal, -1).offset(up, 2),
-            summonPos.offset(horizontal,  0).offset(up, 2),
-            summonPos.offset(horizontal,  1).offset(up, 2),
-
-            summonPos.offset(horizontal, -1).offset(up, 3),
-            summonPos.offset(horizontal,  0).offset(up, 3),
-            summonPos.offset(horizontal,  1).offset(up, 3),
-        };
+        Direction.Axis horizontal = diffX > diffZ ? Direction.Axis.X : Direction.Axis.Z;
 
         Block randomBlock = Portal.getRandomPortalBlock(world.getServer());
 
-        BlockState frameBlock = randomBlock.getDefaultState();
-        BlockState airBlock = Blocks.AIR.getDefaultState();
+        BlockState frameState = randomBlock.getDefaultState();
 
         if (randomBlock instanceof LeavesBlock) {
-            frameBlock = frameBlock.with(LeavesBlock.PERSISTENT, true);
+            frameState = frameState.with(LeavesBlock.PERSISTENT, true);
         }
 
-        for (BlockPos pos : framePositions) {
-            world.setBlockState(pos, frameBlock);
-        }
-
-        for (BlockPos pos : airPositions) {
-            world.setBlockState(pos, airBlock);
-        }
+        Portal.placePortalFrame(world, summonPos, horizontal, frameState);
+        Portal.placePortalBlocks(world, summonPos, horizontal);
 
         Identifier id = Registries.BLOCK.getId(randomBlock);
         String blockName = Text.translatable("block." + id.toTranslationKey()).getString();

@@ -28,6 +28,8 @@
   "block.adm2.any_dimensional_copper_ore": "Any Dimensional Copper Ore",
   "block.adm2.any_dimensional_block": "Any Dimensional Block",
 
+  "block.adm2.any_dimensional_portal_block": "Any Dimensional Portal Block",
+
   "message.adm2.command_success": "Received Any Dimension Mod 2 wands",
   "message.adm2.command_not_player": "You must be a player to use this command",
   "message.adm2.command_no_permission": "You don't have permission to use this command",

@@ -4,9 +4,11 @@ import dev.architectury.platform.Platform;
 import dev.architectury.registry.CreativeTabRegistry;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
-import dev.luxmiyu.adm2.block.Adm2SandBlock;
+import dev.luxmiyu.adm2.block.AnyDimensionalPortalBlock;
+import dev.luxmiyu.adm2.block.AnyDimensionalSandBlock;
 import dev.luxmiyu.adm2.event.Adm2Events;
 import dev.luxmiyu.adm2.item.*;
+import dev.luxmiyu.adm2.portal.TeleportManager;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -28,6 +30,7 @@ public final class Adm2 {
     public static final String MOD_ID = "adm2";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
     public static final Random RANDOM = new Random();
+    public static final TeleportManager TELEPORT_MANAGER = new TeleportManager();
 
     public static final DeferredRegister<ItemGroup> TABS = DeferredRegister.create(MOD_ID, RegistryKeys.ITEM_GROUP);
     public static final RegistrySupplier<ItemGroup> ADM2_TAB = TABS.getRegistrar().register(
@@ -57,17 +60,19 @@ public final class Adm2 {
     public static final RegistrySupplier<Item> ANY_DIMENSIONAL_ROD = ITEMS.register("any_dimensional_rod", () -> new Item(new Item.Settings().arch$tab(ADM2_TAB)));
     public static final RegistrySupplier<Item> ANY_DIMENSIONAL_RING = ITEMS.register("any_dimensional_ring", () -> new Item(new Item.Settings().arch$tab(ADM2_TAB)));
 
-    public static final RegistrySupplier<Block> ANY_DIMENSIONAL_SAND = registerBlock("any_dimensional_sand", () -> new Adm2SandBlock(SAND_SETTINGS));
-    public static final RegistrySupplier<Block> ANY_DIMENSIONAL_COAL_ORE = registerBlock("any_dimensional_coal_ore", () -> new Adm2SandBlock(SAND_SETTINGS));
-    public static final RegistrySupplier<Block> ANY_DIMENSIONAL_IRON_ORE = registerBlock("any_dimensional_iron_ore", () -> new Adm2SandBlock(SAND_SETTINGS));
-    public static final RegistrySupplier<Block> ANY_DIMENSIONAL_GOLD_ORE = registerBlock("any_dimensional_gold_ore", () -> new Adm2SandBlock(SAND_SETTINGS));
-    public static final RegistrySupplier<Block> ANY_DIMENSIONAL_DIAMOND_ORE = registerBlock("any_dimensional_diamond_ore", () -> new Adm2SandBlock(SAND_SETTINGS));
-    public static final RegistrySupplier<Block> ANY_DIMENSIONAL_EMERALD_ORE = registerBlock("any_dimensional_emerald_ore", () -> new Adm2SandBlock(SAND_SETTINGS));
-    public static final RegistrySupplier<Block> ANY_DIMENSIONAL_LAPIS_ORE = registerBlock("any_dimensional_lapis_ore", () -> new Adm2SandBlock(SAND_SETTINGS));
-    public static final RegistrySupplier<Block> ANY_DIMENSIONAL_REDSTONE_ORE = registerBlock("any_dimensional_redstone_ore", () -> new Adm2SandBlock(SAND_SETTINGS));
-    public static final RegistrySupplier<Block> ANY_DIMENSIONAL_COPPER_ORE = registerBlock("any_dimensional_copper_ore", () -> new Adm2SandBlock(SAND_SETTINGS));
-    public static final RegistrySupplier<Block> ANY_DIMENSIONAL_QUARTZ_ORE = registerBlock("any_dimensional_quartz_ore", () -> new Adm2SandBlock(SAND_SETTINGS));
+    public static final RegistrySupplier<Block> ANY_DIMENSIONAL_SAND = registerBlock("any_dimensional_sand", () -> new AnyDimensionalSandBlock(SAND_SETTINGS));
+    public static final RegistrySupplier<Block> ANY_DIMENSIONAL_COAL_ORE = registerBlock("any_dimensional_coal_ore", () -> new AnyDimensionalSandBlock(SAND_SETTINGS));
+    public static final RegistrySupplier<Block> ANY_DIMENSIONAL_IRON_ORE = registerBlock("any_dimensional_iron_ore", () -> new AnyDimensionalSandBlock(SAND_SETTINGS));
+    public static final RegistrySupplier<Block> ANY_DIMENSIONAL_GOLD_ORE = registerBlock("any_dimensional_gold_ore", () -> new AnyDimensionalSandBlock(SAND_SETTINGS));
+    public static final RegistrySupplier<Block> ANY_DIMENSIONAL_DIAMOND_ORE = registerBlock("any_dimensional_diamond_ore", () -> new AnyDimensionalSandBlock(SAND_SETTINGS));
+    public static final RegistrySupplier<Block> ANY_DIMENSIONAL_EMERALD_ORE = registerBlock("any_dimensional_emerald_ore", () -> new AnyDimensionalSandBlock(SAND_SETTINGS));
+    public static final RegistrySupplier<Block> ANY_DIMENSIONAL_LAPIS_ORE = registerBlock("any_dimensional_lapis_ore", () -> new AnyDimensionalSandBlock(SAND_SETTINGS));
+    public static final RegistrySupplier<Block> ANY_DIMENSIONAL_REDSTONE_ORE = registerBlock("any_dimensional_redstone_ore", () -> new AnyDimensionalSandBlock(SAND_SETTINGS));
+    public static final RegistrySupplier<Block> ANY_DIMENSIONAL_COPPER_ORE = registerBlock("any_dimensional_copper_ore", () -> new AnyDimensionalSandBlock(SAND_SETTINGS));
+    public static final RegistrySupplier<Block> ANY_DIMENSIONAL_QUARTZ_ORE = registerBlock("any_dimensional_quartz_ore", () -> new AnyDimensionalSandBlock(SAND_SETTINGS));
     public static final RegistrySupplier<Block> ANY_DIMENSIONAL_BLOCK = registerBlock("any_dimensional_block", () -> new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
+
+    public static final RegistrySupplier<Block> ANY_DIMENSIONAL_PORTAL_BLOCK = registerBlock("any_dimensional_portal_block", () -> new AnyDimensionalPortalBlock(AbstractBlock.Settings.copy(Blocks.NETHER_PORTAL).strength(0f)));
 
     private static RegistrySupplier<Block> registerBlock(String name, Supplier<Block> blockSupplier) {
         RegistrySupplier<Block> block = BLOCKS.register(name, blockSupplier);
@@ -86,7 +91,6 @@ public final class Adm2 {
     public static void init() {
         LOGGER.info("Initializing...");
 
-        // Register blocks
         BLOCKS.register();
         ITEMS.register();
 

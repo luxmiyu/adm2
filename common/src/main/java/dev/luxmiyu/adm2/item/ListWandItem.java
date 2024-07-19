@@ -11,6 +11,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 
 import java.util.List;
@@ -23,7 +24,7 @@ public class ListWandItem extends WandItem {
     private void listBlocks(World world, PlayerEntity player, BlockPos pos, List<Block> blocks) {
         int x = 0;
         int z = 0;
-        final int width = 20;
+        final int width = (int) Math.sqrt(blocks.size());
 
         for (Block block : blocks) {
             BlockState blockState = block.getDefaultState();
@@ -54,12 +55,26 @@ public class ListWandItem extends WandItem {
     private void listPortals(World world, PlayerEntity player, BlockPos pos, List<Block> blocks) {
         int x = 0;
         int z = 0;
-        final int width = 20; // number of portals per row
-        final int offset = 6; // space between portal spawns
+        final int width = (int) Math.sqrt(blocks.size());
 
-        // place portals
+        // --#----#--
+        //
+        //
+        //
+        //
+        // --#----#--
+
         for (Block block : blocks) {
-            placePortal(world, pos.add(x * offset, 0, z * offset), block);
+            BlockState frameState = block.getDefaultState();
+            BlockState floorState = Blocks.QUARTZ_BRICKS.getDefaultState();
+
+            if (block instanceof LeavesBlock) {
+                frameState = frameState.with(LeavesBlock.PERSISTENT, true);
+            }
+
+            BlockPos portalPos = pos.add(x * 5, 0, z * 5);
+
+            Portal.generatePortal(world, portalPos, Direction.Axis.Z, frameState, floorState);
 
             x++;
 
@@ -69,86 +84,9 @@ public class ListWandItem extends WandItem {
             }
         }
 
-        player.teleport(pos.getX(), pos.getY() + 5, pos.getZ(), true);
+        player.teleport(pos.getX(), pos.getY() + 5.5d, pos.getZ(), true);
 
         player.sendMessage(Text.translatable("message.adm2.list_portals", String.valueOf(blocks.size())), true);
-    }
-
-    private void placePortalSpace(World world, BlockPos pos) {
-        BlockState floorBlock = Blocks.QUARTZ_BRICKS.getDefaultState();
-        BlockState airBlock = Blocks.AIR.getDefaultState();
-
-        for (int i = -1; i < 6; i++) {
-            for (int j = -1; j < 6; j++) {
-                world.setBlockState(pos.add(i, 0, j), floorBlock);
-
-                for (int k = 1; k < 7; k++) {
-                    world.setBlockState(pos.add(i, k, j), airBlock);
-                }
-            }
-        }
-    }
-
-    private void placePortal(World world, BlockPos pos, Block block) {
-        // #####
-        // #   #
-        // #   #
-        // #   #
-        // O####  O = pos
-
-        placePortalSpace(world, pos.add(0, -1, 0));
-
-        BlockState frameBlock = block.getDefaultState();
-        BlockState airBlock = Blocks.AIR.getDefaultState();
-
-        if (block instanceof LeavesBlock) {
-            frameBlock = frameBlock.with(LeavesBlock.PERSISTENT, true);
-        }
-
-        BlockPos[] framePositions = {
-            pos.add(0, 0, 0),
-            pos.add(1, 0, 0),
-            pos.add(2, 0, 0),
-            pos.add(3, 0, 0),
-            pos.add(4, 0, 0),
-
-            pos.add(0, 1, 0),
-            pos.add(4, 1, 0),
-
-            pos.add(0, 2, 0),
-            pos.add(4, 2, 0),
-
-            pos.add(0, 3, 0),
-            pos.add(4, 3, 0),
-
-            pos.add(0, 4, 0),
-            pos.add(1, 4, 0),
-            pos.add(2, 4, 0),
-            pos.add(3, 4, 0),
-            pos.add(4, 4, 0),
-        };
-
-        BlockPos[] airPositions = {
-            pos.add(1, 1, 0),
-            pos.add(2, 1, 0),
-            pos.add(3, 1, 0),
-
-            pos.add(1, 2, 0),
-            pos.add(2, 2, 0),
-            pos.add(3, 2, 0),
-
-            pos.add(1, 3, 0),
-            pos.add(2, 3, 0),
-            pos.add(3, 3, 0),
-        };
-
-        for (BlockPos p : framePositions) {
-            world.setBlockState(p, frameBlock);
-        }
-
-        for (BlockPos p : airPositions) {
-            world.setBlockState(p, airBlock);
-        }
     }
 
     @Override

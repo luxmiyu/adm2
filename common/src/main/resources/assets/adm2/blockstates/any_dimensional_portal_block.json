@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
-      "model": "adm2:block/any_dimensional_portal_block"
+    "axis=x": {
+      "model": "adm2:block/any_dimensional_portal_block_x"
+    },
+    "axis=z": {
+      "model": "adm2:block/any_dimensional_portal_block_z"
     }
   }
 }
