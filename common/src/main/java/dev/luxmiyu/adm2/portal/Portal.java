@@ -150,7 +150,7 @@ public class Portal {
 
         // place a platform for falling blocks
         Block block = blockState.getBlock();
-        if (block instanceof ColoredFallingBlock) {
+        if (block instanceof FallingBlock) {
             for (int i = -1; i < 2; i++) {
                 for (int j = -1; j < 2; j++) {
                     world.setBlockState(blockPos.add(i, -1, j), Adm2.ANY_DIMENSIONAL_BLOCK.get().getDefaultState());
