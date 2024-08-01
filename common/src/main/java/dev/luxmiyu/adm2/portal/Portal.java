@@ -362,16 +362,22 @@ public class Portal {
         }
 
         ServerWorld targetWorld = getDimensionWorld(world.getServer(), targetBlock);
-        if (world == targetWorld) targetWorld = world.getServer().getOverworld();
+        final boolean goToOverworld = world == targetWorld;
+        if (goToOverworld) targetWorld = world.getServer().getOverworld();
+
         if (targetWorld == null) { worldIsNull(player); return; }
 
         BlockPos targetPos = area.getCenterPos();
+
         PortalArea targetArea = findPortal(targetWorld, targetPos, targetBlock);
 
         Vec3d teleportPos;
 
         if (targetArea == null) {
             targetPos = findEmptyPortalArea(targetWorld, targetPos);
+
+            // prevent the player from falling into the void
+            if (!goToOverworld && targetPos.getY() < 4) targetPos = new BlockPos(targetPos.getX(), 4, targetPos.getZ());
 
             generatePortalWithBase(targetWorld, targetPos.offset(Direction.DOWN, 2), state.get(AnyDimensionalPortalBlock.AXIS), targetState);
             teleportPos = targetPos.toCenterPos();
