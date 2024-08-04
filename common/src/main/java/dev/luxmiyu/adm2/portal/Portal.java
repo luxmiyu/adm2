@@ -376,8 +376,9 @@ public class Portal {
         if (targetArea == null) {
             targetPos = findEmptyPortalArea(targetWorld, targetPos);
 
-            // prevent the player from falling into the void
+            // prevent the player from dying due to falling from out of bounds
             if (!goToOverworld && targetPos.getY() < 4) targetPos = new BlockPos(targetPos.getX(), 4, targetPos.getZ());
+            if (!goToOverworld && targetPos.getY() > 248) targetPos = new BlockPos(targetPos.getX(), 248, targetPos.getZ());
 
             generatePortalWithBase(targetWorld, targetPos.offset(Direction.DOWN, 2), state.get(AnyDimensionalPortalBlock.AXIS), targetState);
             teleportPos = targetPos.toCenterPos();
